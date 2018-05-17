@@ -1,0 +1,2156 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Proj_ECS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Proj_ECS.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Proj_ECS"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Proj_ECS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\pll_controller.v" into library work
+Parsing module <pll_controller>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\floper.v" into library work
+Parsing module <floper>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\flop.v" into library work
+Parsing module <flop>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\rom_sin.v" into library work
+Parsing module <rom_sin>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\fir_mult.v" into library work
+Parsing module <fir_mult>.
+WARNING:HDLCompiler:751 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\fir_mult.v" Line 10: Redeclaration of ansi port fltd is not allowed
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\tx_bridge.v" into library work
+Parsing module <tx_bridge>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\speed_setting.v" into library work
+Parsing module <speed_setting>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\rx_bridge.v" into library work
+Parsing module <rx_bridge>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\RAM_ADC.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 12.
+Parsing module <RAM_ADC>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_uart_tx.v" into library work
+Parsing module <my_uart_tx>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_uart_rx.v" into library work
+Parsing module <my_uart_rx>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\GenWave.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 23.
+Parsing module <GenWave>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\floper_N.v" into library work
+Parsing module <floper_N>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\FFT.v" into library work
+Parsing module <FFT>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\Dram_fft_re.v" into library work
+Parsing module <Dram_fft_re>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\Dram_fft_im.v" into library work
+Parsing module <Dram_fft_im>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\fir_module.v" into library work
+Parsing module <fir_module>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 12.
+Parsing module <my_FFT>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Gen_clk.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 13.
+Parsing module <Gen_clk>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DDS_Core.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 18.
+Parsing module <DDS_Core>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DAC8551.v" into library work
+Parsing module <DAC8551>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Ctr_UART.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 3.
+Parsing module <Ctr_UART>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\AD9244.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 12.
+Parsing module <AD9244>.
+Analyzing Verilog file "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" into library work
+Parsing verilog file "ECS_Define.v" included at line 12.
+WARNING:HDLCompiler:572 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" Line 29: Macro <NA_FFT> is redefined.
+WARNING:HDLCompiler:572 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" Line 30: Macro <N_Depth_FFT> is redefined.
+Parsing module <Proj_ECS>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Proj_ECS>.
+
+Elaborating module <Gen_clk>.
+
+Elaborating module <pll_controller>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=8,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=8,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=5,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DIVIDE=2,CLKOUT2_PHASE=0.0,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DIVIDE=80,CLKOUT3_PHASE=0.0,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DIVIDE=20,CLKOUT4_PHASE=0.0,CLKOUT4_DUTY_CYCLE=0.5,CLKIN_PERIOD=20.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\pll_controller.v" Line 134: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\pll_controller.v" Line 135: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <uart>.
+
+Elaborating module <speed_setting>.
+
+Elaborating module <my_uart_rx>.
+
+Elaborating module <rx_bridge>.
+
+Elaborating module <tx_bridge>.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\tx_bridge.v" Line 32: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:1127 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\tx_bridge.v" Line 30: Assignment to Data_r ignored, since the identifier is never used
+
+Elaborating module <my_uart_tx>.
+
+Elaborating module <DAC8551>.
+
+Elaborating module <DDS_Core>.
+
+Elaborating module <GenWave>.
+
+Elaborating module <rom_sin>.
+WARNING:HDLCompiler:1499 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\rom_sin.v" Line 39: Empty module <rom_sin> remains a black box.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\GenWave.v" Line 98: Result of 32-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <floper_N(WIDTH=3,Delay_a11=4)>.
+
+Elaborating module <floper(WIDTH=3)>.
+
+Elaborating module <flop(WIDTH=3)>.
+WARNING:HDLCompiler:1127 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DDS_Core.v" Line 61: Assignment to Sel_WaveFunc_post ignored, since the identifier is never used
+
+Elaborating module <AD9244>.
+
+Elaborating module <fir_module>.
+
+Elaborating module <fir_mult>.
+WARNING:HDLCompiler:189 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\AD9244.v" Line 96: Size mismatch in connection of port <coe>. Formal port size is 4-bit while actual signal size is 5-bit.
+
+Elaborating module <RAM_ADC>.
+WARNING:HDLCompiler:189 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" Line 200: Size mismatch in connection of port <coe>. Formal port size is 5-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" Line 221: Size mismatch in connection of port <coe>. Formal port size is 5-bit while actual signal size is 4-bit.
+
+Elaborating module <Ctr_UART>.
+
+Elaborating module <my_FFT>.
+
+Elaborating module <FFT>.
+WARNING:HDLCompiler:1127 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 59: Assignment to xk_index ignored, since the identifier is never used
+
+Elaborating module <Dram_fft_re>.
+WARNING:HDLCompiler:1499 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\Dram_fft_re.v" Line 39: Empty module <Dram_fft_re> remains a black box.
+
+Elaborating module <Dram_fft_im>.
+WARNING:HDLCompiler:1499 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\Dram_fft_im.v" Line 39: Empty module <Dram_fft_im> remains a black box.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 179: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 190: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 200: Result of 33-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 208: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 227: Result of 33-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 236: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 246: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 258: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 268: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 278: Result of 33-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 286: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 305: Result of 33-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 314: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" Line 323: Result of 32-bit expression is truncated to fit in 28-bit target.
+WARNING:Xst:2972 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DDS_Core.v" line 59. All outputs of instance <floper_N_1> of block <floper_N> are unconnected in block <DDS_Core>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Proj_ECS>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v".
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Proj_ECS.v" line 216: Output port <rdy_W> of the instance <AD9244_2> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <start_FFT>.
+    Found 1-bit register for signal <start_FFT_1>.
+    Found 14-bit register for signal <FFT_xn_re>.
+    Found 1-bit register for signal <En_FFT1>.
+    Found 3-bit register for signal <current_S>.
+    Found finite state machine <FSM_0> for signal <current_S>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_50m (rising_edge)                          |
+    | Reset              | rst_INV_41_o (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Proj_ECS> synthesized.
+
+Synthesizing Unit <Gen_clk>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Gen_clk.v".
+    Found 40-bit register for signal <count_clk_DAC>.
+    Found 40-bit register for signal <count_clk_ADC_W>.
+    Found 1-bit register for signal <clk_W_AD9244>.
+    Found 1-bit register for signal <clk_W_AD9244_fir>.
+    Found 21-bit register for signal <count_clk_ADC_R>.
+    Found 1-bit register for signal <clk_25m>.
+    Found 1-bit register for signal <clk_DAC8551>.
+    Found 1-bit register for signal <clk_DAC904>.
+    Found 40-bit adder for signal <count_clk_DAC[39]_GND_2_o_add_4_OUT> created at line 78.
+    Found 40-bit adder for signal <count_clk_ADC_W[39]_GND_2_o_add_10_OUT> created at line 102.
+    Found 21-bit adder for signal <count_clk_ADC_R[20]_GND_2_o_add_15_OUT> created at line 163.
+    Found 40-bit comparator greater for signal <count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o> created at line 58
+    Found 40-bit comparator greater for signal <count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o> created at line 100
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 106 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <Gen_clk> synthesized.
+
+Synthesizing Unit <pll_controller>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\ipcore_dir\pll_controller.v".
+    Summary:
+	no macro.
+Unit <pll_controller> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\uart.v".
+    Summary:
+	no macro.
+Unit <uart> synthesized.
+
+Synthesizing Unit <speed_setting>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\speed_setting.v".
+    Found 13-bit register for signal <cnt>.
+    Found 1-bit register for signal <clk_bps>.
+    Found 13-bit adder for signal <cnt[12]_GND_8_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <speed_setting> synthesized.
+
+Synthesizing Unit <my_uart_rx>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_uart_rx.v".
+    Found 8-bit register for signal <rx_temp_data>.
+    Found 8-bit register for signal <rx_data>.
+    Found 4-bit register for signal <num>.
+    Found 1-bit register for signal <uart_rx1>.
+    Found 1-bit register for signal <uart_rx2>.
+    Found 1-bit register for signal <uart_rx3>.
+    Found 1-bit register for signal <bps_start>.
+    Found 1-bit register for signal <rx_int>.
+    Found 1-bit register for signal <rx_rdy>.
+    Found 1-bit register for signal <uart_rx0>.
+    Found 4-bit adder for signal <num[3]_GND_9_o_add_1_OUT> created at line 79.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <my_uart_rx> synthesized.
+
+Synthesizing Unit <rx_bridge>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\rx_bridge.v".
+        WIDLE = 4'b0000
+        WRXAA = 4'b0001
+        WRXD1 = 4'b0010
+        WRXD2 = 4'b0011
+        WRXD3 = 4'b0100
+        WRXD4 = 4'b0101
+        WRXD5 = 4'b0110
+    Found 1-bit register for signal <RX_rdy>.
+    Found 8-bit register for signal <Data1>.
+    Found 8-bit register for signal <Data2>.
+    Found 8-bit register for signal <Data3>.
+    Found 8-bit register for signal <Data4>.
+    Found 8-bit register for signal <Data5>.
+    Found 4-bit register for signal <cstate>.
+    Found finite state machine <FSM_1> for signal <cstate>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_29_o (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  41 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rx_bridge> synthesized.
+
+Synthesizing Unit <tx_bridge>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\tx_bridge.v".
+    Found 8-bit register for signal <Data5_r>.
+    Found 20-bit register for signal <fcnt>.
+    Found 1-bit register for signal <txen>.
+    Found 8-bit register for signal <txdb>.
+    Found 20-bit adder for signal <fcnt[19]_GND_11_o_add_10_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <tx_bridge> synthesized.
+
+Synthesizing Unit <my_uart_tx>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_uart_tx.v".
+    Found 1-bit register for signal <uart_tx_r>.
+    Found 8-bit register for signal <tx_data>.
+    Found 4-bit register for signal <num>.
+    Found 1-bit register for signal <tx_en>.
+    Found 1-bit register for signal <bps_start>.
+    Found 4-bit adder for signal <num[3]_GND_12_o_add_3_OUT> created at line 53.
+    Found 1-bit 12-to-1 multiplexer for signal <num[3]_PWR_12_o_Mux_4_o> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <my_uart_tx> synthesized.
+
+Synthesizing Unit <DAC8551>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DAC8551.v".
+        Data_0 = 8'b00000000
+        loaddata = 2'b00
+        updatedata = 2'b01
+        waitchange = 2'b10
+    Found 1-bit register for signal <q>.
+    Found 2-bit register for signal <currentstate>.
+    Found 1-bit register for signal <DIN>.
+    Found 5-bit register for signal <Count>.
+    Found 1-bit register for signal <SYNC>.
+    Found 24-bit register for signal <Data>.
+    Found 16-bit register for signal <Data_store>.
+    Found finite state machine <FSM_2> for signal <currentstate>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <Count[4]_GND_14_o_add_15_OUT> created at line 109.
+    Found 16-bit comparator not equal for signal <n0001> created at line 43
+    Found 5-bit comparator greater for signal <n0007> created at line 73
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <DAC8551> synthesized.
+
+Synthesizing Unit <DDS_Core>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DDS_Core.v".
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\DDS_Core.v" line 59: Output port <q> of the instance <floper_N> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <AC_Wave>.
+    Found 14-bit register for signal <Data_temp>.
+    Found 14-bit register for signal <Data_Out>.
+    Found 3-bit register for signal <Sel_WaveFunc_pre>.
+    Found 14-bit 7-to-1 multiplexer for signal <GND_15_o_Sin_out[13]_mux_13_OUT> created at line 84.
+    Found 3-bit comparator not equal for signal <n0001> created at line 71
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <DDS_Core> synthesized.
+
+Synthesizing Unit <GenWave>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\GenWave.v".
+    Found 14-bit register for signal <Stw_out>.
+    Found 14-bit register for signal <Tri_out>.
+    Found 14-bit register for signal <Squ_out>.
+    Found 15-bit register for signal <addra>.
+    Found 15-bit adder for signal <addra[14]_addra[14]_mux_6_OUT> created at line 70.
+    Found 13-bit subtractor for signal <GND_16_o_GND_16_o_sub_20_OUT<12:0>> created at line 98.
+    Found 14-bit comparator greater for signal <n0012> created at line 92
+    Found 14-bit comparator greater for signal <n0020> created at line 112
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <GenWave> synthesized.
+
+Synthesizing Unit <floper>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\floper.v".
+        WIDTH = 3
+    Found 1-bit register for signal <q<2>>.
+    Found 1-bit register for signal <q<1>>.
+    Found 1-bit register for signal <q<0>>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <floper> synthesized.
+
+Synthesizing Unit <flop>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\flop.v".
+        WIDTH = 3
+    Found 1-bit register for signal <q<2>>.
+    Found 1-bit register for signal <q<1>>.
+    Found 1-bit register for signal <q<0>>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <flop> synthesized.
+
+Synthesizing Unit <AD9244>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\AD9244.v".
+WARNING:Xst:647 - Input <coe<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <OTR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <Addr_R>.
+    Found 1-bit register for signal <rdy_R>.
+    Found 8-bit register for signal <Addr_W>.
+    Found 1-bit register for signal <rdy_W>.
+    Found 1-bit register for signal <ReadEn_FFT>.
+    Found 8-bit register for signal <Addr_D_FFT>.
+    Found 14-bit register for signal <data_store<22:9>>.
+    Found 14-bit adder for signal <Data_C<13:0>> created at line 84.
+    Found 8-bit adder for signal <Addr_R[7]_GND_21_o_add_6_OUT> created at line 144.
+    Found 8-bit adder for signal <Addr_W[7]_GND_21_o_add_14_OUT> created at line 174.
+    Found 8-bit adder for signal <Addr_D_FFT[7]_GND_21_o_add_21_OUT> created at line 202.
+    Found 16-bit comparator lessequal for signal <n0004> created at line 137
+    Found 8-bit comparator lessequal for signal <n0016> created at line 167
+    Found 8-bit comparator greater for signal <PWR_21_o_INV_70_o> created at line 194
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <AD9244> synthesized.
+
+Synthesizing Unit <fir_module>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\fir_module.v".
+    Found 4-bit register for signal <mem_h1>.
+    Found 4-bit register for signal <mem_h2>.
+    Found 4-bit register for signal <mem_h3>.
+    Found 4-bit register for signal <mem_h4>.
+    Found 4-bit register for signal <mem_h5>.
+    Found 4-bit register for signal <mem_h6>.
+    Found 4-bit register for signal <mem_h7>.
+    Found 4-bit register for signal <mem_h8>.
+    Found 4-bit register for signal <mem_h9>.
+    Found 4-bit register for signal <mem_h10>.
+    Found 4-bit register for signal <h0>.
+    Found 4-bit register for signal <h1>.
+    Found 4-bit register for signal <h2>.
+    Found 4-bit register for signal <h3>.
+    Found 4-bit register for signal <h4>.
+    Found 4-bit register for signal <h5>.
+    Found 4-bit register for signal <h6>.
+    Found 4-bit register for signal <h7>.
+    Found 4-bit register for signal <h8>.
+    Found 4-bit register for signal <h9>.
+    Found 4-bit register for signal <h10>.
+    Found 154-bit register for signal <n0108>.
+    Found 23-bit register for signal <dout>.
+    Found 4-bit register for signal <mem_h0>.
+    Found 19-bit adder for signal <n0193[18:0]> created at line 314.
+    Found 20-bit adder for signal <n0196[19:0]> created at line 314.
+    Found 21-bit adder for signal <n0199[20:0]> created at line 314.
+    Found 22-bit adder for signal <n0202[21:0]> created at line 314.
+    Found 23-bit adder for signal <_n0270> created at line 314.
+    Found 23-bit adder for signal <_n0271> created at line 314.
+    Found 23-bit adder for signal <_n0272> created at line 314.
+    Found 23-bit adder for signal <_n0273> created at line 314.
+    Found 23-bit adder for signal <_n0274> created at line 314.
+    Found 23-bit adder for signal <BUS_0005_GND_22_o_add_82_OUT> created at line 314.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred 265 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <fir_module> synthesized.
+
+Synthesizing Unit <fir_mult>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\fir_mult.v".
+    Found 18-bit register for signal <s1>.
+    Found 18-bit register for signal <s2>.
+    Found 18-bit register for signal <s3>.
+    Found 18-bit register for signal <a0>.
+    Found 18-bit register for signal <a1>.
+    Found 18-bit register for signal <fltd>.
+    Found 18-bit register for signal <s0>.
+    Found 18-bit adder for signal <s0[17]_s1[17]_add_5_OUT> created at line 41.
+    Found 18-bit adder for signal <s2[17]_s3[17]_add_6_OUT> created at line 42.
+    Found 18-bit adder for signal <a0[17]_a1[17]_add_7_OUT> created at line 44.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 126 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <fir_mult> synthesized.
+
+Synthesizing Unit <RAM_ADC>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\RAM_ADC.v".
+    Found 14-bit register for signal <Data_O_FFT>.
+    Found 14-bit register for signal <Data_O_Serial>.
+    Found 256x14-bit dual-port RAM <Mram_Mem> for signal <Mem>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <RAM_ADC> synthesized.
+
+Synthesizing Unit <Ctr_UART>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\Ctr_UART.v".
+WARNING:Xst:647 - Input <Addr_W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Addr_W_1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <DataTX_1>.
+    Found 8-bit register for signal <DataTX_2>.
+    Found 8-bit register for signal <DataTX_3>.
+    Found 8-bit register for signal <DataTX_4>.
+    Found 1-bit register for signal <EnTxData>.
+    Found 8-bit register for signal <DIO_OUT1>.
+    Found 8-bit register for signal <DIO_OUT2>.
+    Found 8-bit register for signal <DIO_OUT3>.
+    Found 1-bit register for signal <Flag_DisFPGA2PC>.
+    Found 3-bit register for signal <Sel_WaveFunc>.
+    Found 14-bit register for signal <DutyCyc>.
+    Found 12-bit register for signal <freq_incr>.
+    Found 16-bit register for signal <Amp_DAC904>.
+    Found 16-bit register for signal <Bias_DAC904>.
+    Found 1-bit register for signal <cnt_DAC904<39>>.
+    Found 1-bit register for signal <cnt_DAC904<38>>.
+    Found 1-bit register for signal <cnt_DAC904<37>>.
+    Found 1-bit register for signal <cnt_DAC904<36>>.
+    Found 1-bit register for signal <cnt_DAC904<35>>.
+    Found 1-bit register for signal <cnt_DAC904<34>>.
+    Found 1-bit register for signal <cnt_DAC904<33>>.
+    Found 1-bit register for signal <cnt_DAC904<32>>.
+    Found 1-bit register for signal <cnt_DAC904<31>>.
+    Found 1-bit register for signal <cnt_DAC904<30>>.
+    Found 1-bit register for signal <cnt_DAC904<29>>.
+    Found 1-bit register for signal <cnt_DAC904<28>>.
+    Found 1-bit register for signal <cnt_DAC904<27>>.
+    Found 1-bit register for signal <cnt_DAC904<26>>.
+    Found 1-bit register for signal <cnt_DAC904<25>>.
+    Found 1-bit register for signal <cnt_DAC904<24>>.
+    Found 1-bit register for signal <cnt_DAC904<23>>.
+    Found 1-bit register for signal <cnt_DAC904<22>>.
+    Found 1-bit register for signal <cnt_DAC904<21>>.
+    Found 1-bit register for signal <cnt_DAC904<20>>.
+    Found 1-bit register for signal <cnt_DAC904<19>>.
+    Found 1-bit register for signal <cnt_DAC904<18>>.
+    Found 1-bit register for signal <cnt_DAC904<17>>.
+    Found 1-bit register for signal <cnt_DAC904<16>>.
+    Found 1-bit register for signal <cnt_DAC904<15>>.
+    Found 1-bit register for signal <cnt_DAC904<14>>.
+    Found 1-bit register for signal <cnt_DAC904<13>>.
+    Found 1-bit register for signal <cnt_DAC904<12>>.
+    Found 1-bit register for signal <cnt_DAC904<11>>.
+    Found 1-bit register for signal <cnt_DAC904<10>>.
+    Found 1-bit register for signal <cnt_DAC904<9>>.
+    Found 1-bit register for signal <cnt_DAC904<8>>.
+    Found 1-bit register for signal <cnt_DAC904<7>>.
+    Found 1-bit register for signal <cnt_DAC904<6>>.
+    Found 1-bit register for signal <cnt_DAC904<5>>.
+    Found 1-bit register for signal <cnt_DAC904<4>>.
+    Found 1-bit register for signal <cnt_DAC904<3>>.
+    Found 1-bit register for signal <cnt_DAC904<2>>.
+    Found 1-bit register for signal <cnt_DAC904<1>>.
+    Found 1-bit register for signal <cnt_DAC904<0>>.
+    Found 1-bit register for signal <cnt_AD9244_W<39>>.
+    Found 1-bit register for signal <cnt_AD9244_W<38>>.
+    Found 1-bit register for signal <cnt_AD9244_W<37>>.
+    Found 1-bit register for signal <cnt_AD9244_W<36>>.
+    Found 1-bit register for signal <cnt_AD9244_W<35>>.
+    Found 1-bit register for signal <cnt_AD9244_W<34>>.
+    Found 1-bit register for signal <cnt_AD9244_W<33>>.
+    Found 1-bit register for signal <cnt_AD9244_W<32>>.
+    Found 1-bit register for signal <cnt_AD9244_W<31>>.
+    Found 1-bit register for signal <cnt_AD9244_W<30>>.
+    Found 1-bit register for signal <cnt_AD9244_W<29>>.
+    Found 1-bit register for signal <cnt_AD9244_W<28>>.
+    Found 1-bit register for signal <cnt_AD9244_W<27>>.
+    Found 1-bit register for signal <cnt_AD9244_W<26>>.
+    Found 1-bit register for signal <cnt_AD9244_W<25>>.
+    Found 1-bit register for signal <cnt_AD9244_W<24>>.
+    Found 1-bit register for signal <cnt_AD9244_W<23>>.
+    Found 1-bit register for signal <cnt_AD9244_W<22>>.
+    Found 1-bit register for signal <cnt_AD9244_W<21>>.
+    Found 1-bit register for signal <cnt_AD9244_W<20>>.
+    Found 1-bit register for signal <cnt_AD9244_W<19>>.
+    Found 1-bit register for signal <cnt_AD9244_W<18>>.
+    Found 1-bit register for signal <cnt_AD9244_W<17>>.
+    Found 1-bit register for signal <cnt_AD9244_W<16>>.
+    Found 1-bit register for signal <cnt_AD9244_W<15>>.
+    Found 1-bit register for signal <cnt_AD9244_W<14>>.
+    Found 1-bit register for signal <cnt_AD9244_W<13>>.
+    Found 1-bit register for signal <cnt_AD9244_W<12>>.
+    Found 1-bit register for signal <cnt_AD9244_W<11>>.
+    Found 1-bit register for signal <cnt_AD9244_W<10>>.
+    Found 1-bit register for signal <cnt_AD9244_W<9>>.
+    Found 1-bit register for signal <cnt_AD9244_W<8>>.
+    Found 1-bit register for signal <cnt_AD9244_W<7>>.
+    Found 1-bit register for signal <cnt_AD9244_W<6>>.
+    Found 1-bit register for signal <cnt_AD9244_W<5>>.
+    Found 1-bit register for signal <cnt_AD9244_W<4>>.
+    Found 1-bit register for signal <cnt_AD9244_W<3>>.
+    Found 1-bit register for signal <cnt_AD9244_W<2>>.
+    Found 1-bit register for signal <cnt_AD9244_W<1>>.
+    Found 1-bit register for signal <cnt_AD9244_W<0>>.
+    Found 4-bit register for signal <count_coe>.
+    Found 4-bit register for signal <coe>.
+    Found 4-bit register for signal <count_coe_1>.
+    Found 4-bit register for signal <coe_1>.
+    Found 1-bit register for signal <WriteEn_ADC>.
+    Found 1-bit register for signal <detect>.
+    Found 3-bit register for signal <delay<2:0>>.
+    Found 1-bit register for signal <Flag_ReadADC_Samp>.
+    Found 1-bit register for signal <R_Restart_ADC>.
+    Found 16-bit register for signal <ADCR_Length>.
+    Found 1-bit register for signal <ReadFFTEn_ADC>.
+    Found 8-bit register for signal <FFT_Rlength>.
+    Found 1-bit register for signal <Flag_ReadADC_Samp_1>.
+    Found 1-bit register for signal <R_Restart_ADC_1>.
+    Found 16-bit register for signal <ADCR_Length_1>.
+    Found 1-bit register for signal <ReadFFTEn_ADC_1>.
+    Found 8-bit register for signal <FFT_Rlength_1>.
+    Found 1-bit register for signal <rst_sys>.
+    Found 1-bit register for signal <Err_Check>.
+    Found 8-bit comparator equal for signal <DataRX_5[7]_DataRX_1[7]_equal_6_o> created at line 80
+    Summary:
+	inferred 276 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  43 Multiplexer(s).
+Unit <Ctr_UART> synthesized.
+
+Synthesizing Unit <my_FFT>.
+    Related source file is "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v".
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <xn_index> of the instance <FFT_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <xk_index> of the instance <FFT_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <rfd> of the instance <FFT_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <busy> of the instance <FFT_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <edone> of the instance <FFT_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\src\my_FFT.v" line 45: Output port <done> of the instance <FFT_1> is unconnected or connected to loadless signal.
+    Found 23-bit register for signal <Data_O_FFT2>.
+    Found 1-bit register for signal <writeEn_FFT1>.
+    Found 8-bit register for signal <Addr_W_FFT1>.
+    Found 1-bit register for signal <writeEn_FFT2>.
+    Found 8-bit register for signal <Addr_W_FFT2>.
+    Found 1-bit register for signal <rdy_rfft1>.
+    Found 8-bit register for signal <Addr_R_FFT1>.
+    Found 1-bit register for signal <ReadEn_Re_FFT1>.
+    Found 1-bit register for signal <ReadEn_Im_FFT1>.
+    Found 28-bit register for signal <Data_send_FFT1>.
+    Found 1-bit register for signal <rdy_rfft2>.
+    Found 8-bit register for signal <Addr_R_FFT2>.
+    Found 1-bit register for signal <ReadEn_Re_FFT2>.
+    Found 1-bit register for signal <ReadEn_Im_FFT2>.
+    Found 28-bit register for signal <Data_send_FFT2>.
+    Found 23-bit register for signal <Data_O_FFT1>.
+    Found 8-bit adder for signal <Addr_W_FFT1[7]_GND_26_o_add_9_OUT> created at line 148.
+    Found 8-bit adder for signal <Addr_W_FFT2[7]_GND_26_o_add_11_OUT> created at line 157.
+    Found 8-bit adder for signal <Addr_R_FFT1[7]_GND_26_o_add_24_OUT> created at line 224.
+    Found 8-bit adder for signal <Addr_R_FFT2[7]_GND_26_o_add_43_OUT> created at line 302.
+    Found 8-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT1_GND_26_o_wide_mux_28_OUT> created at line 183.
+    Found 1-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT1_GND_26_o_Mux_29_o> created at line 183.
+    Found 1-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT1_PWR_26_o_Mux_30_o> created at line 183.
+    Found 8-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT2_GND_26_o_wide_mux_47_OUT> created at line 261.
+    Found 1-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT2_GND_26_o_Mux_48_o> created at line 261.
+    Found 1-bit 4-to-1 multiplexer for signal <ReadEn_Re_FFT2_PWR_26_o_Mux_49_o> created at line 261.
+    Found 8-bit comparator greater for signal <FFT_Rlength[7]_INV_108_o> created at line 213
+    Found 8-bit comparator greater for signal <FFT_Rlength_1[7]_INV_109_o> created at line 291
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 142 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  30 Multiplexer(s).
+Unit <my_FFT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 256x14-bit dual-port RAM                              : 4
+# Adders/Subtractors                                   : 110
+ 13-bit adder                                          : 2
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 1
+ 18-bit adder                                          : 66
+ 19-bit adder                                          : 2
+ 20-bit adder                                          : 3
+ 21-bit adder                                          : 3
+ 22-bit adder                                          : 2
+ 23-bit adder                                          : 12
+ 4-bit adder                                           : 2
+ 40-bit adder                                          : 2
+ 5-bit adder                                           : 2
+ 8-bit adder                                           : 10
+# Registers                                            : 410
+ 1-bit register                                        : 135
+ 12-bit register                                       : 1
+ 13-bit register                                       : 2
+ 14-bit register                                       : 13
+ 15-bit register                                       : 1
+ 154-bit register                                      : 2
+ 16-bit register                                       : 6
+ 18-bit register                                       : 154
+ 20-bit register                                       : 1
+ 21-bit register                                       : 1
+ 23-bit register                                       : 4
+ 24-bit register                                       : 2
+ 28-bit register                                       : 2
+ 3-bit register                                        : 3
+ 4-bit register                                        : 50
+ 40-bit register                                       : 2
+ 5-bit register                                        : 2
+ 8-bit register                                        : 29
+# Comparators                                          : 18
+ 14-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 2
+ 3-bit comparator not equal                            : 1
+ 40-bit comparator greater                             : 2
+ 5-bit comparator greater                              : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 226
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 43
+ 1-bit 4-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 2
+ 14-bit 2-to-1 multiplexer                             : 12
+ 14-bit 7-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 5
+ 18-bit 2-to-1 multiplexer                             : 88
+ 20-bit 2-to-1 multiplexer                             : 2
+ 23-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 8
+ 40-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 47
+ 8-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 4
+# Xors                                                 : 2
+ 8-bit xor4                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/FFT.ngc>.
+Reading Secure Unit <blk000003bc>.
+Reading core <ipcore_dir/Dram_fft_re.ngc>.
+Reading core <ipcore_dir/Dram_fft_im.ngc>.
+Reading core <ipcore_dir/rom_sin.ngc>.
+Loading core <FFT> for timing and area information for instance <FFT_1>.
+Loading core <Dram_fft_re> for timing and area information for instance <ADC1_FFT_RE>.
+Loading core <Dram_fft_im> for timing and area information for instance <ADC1_FFT_IM>.
+Loading core <Dram_fft_re> for timing and area information for instance <ADC2_FFT_RE>.
+Loading core <Dram_fft_im> for timing and area information for instance <ADC2_FFT_IM>.
+Loading core <rom_sin> for timing and area information for instance <rom_sin_1>.
+INFO:Xst:2261 - The FF/Latch <rx_int> in Unit <my_uart_rx> is equivalent to the following FF/Latch, which will be removed : <bps_start> 
+INFO:Xst:2261 - The FF/Latch <tx_en> in Unit <my_uart_tx> is equivalent to the following FF/Latch, which will be removed : <bps_start> 
+INFO:Xst:2261 - The FF/Latch <Squ_out_0> in Unit <GenWave_1> is equivalent to the following 12 FFs/Latches, which will be removed : <Squ_out_1> <Squ_out_2> <Squ_out_3> <Squ_out_4> <Squ_out_5> <Squ_out_6> <Squ_out_7> <Squ_out_8> <Squ_out_9> <Squ_out_10> <Squ_out_11> <Squ_out_12> 
+WARNING:Xst:2677 - Node <dout_0> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_1> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_2> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_3> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_4> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_5> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_6> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_7> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_8> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_0> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_1> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_2> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_3> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_4> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_5> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_6> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_7> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_8> of sequential type is unconnected in block <low_pass_filter>.
+
+Synthesizing (advanced) Unit <AD9244>.
+The following registers are absorbed into counter <Addr_W>: 1 register on signal <Addr_W>.
+The following registers are absorbed into counter <Addr_R>: 1 register on signal <Addr_R>.
+The following registers are absorbed into counter <Addr_D_FFT>: 1 register on signal <Addr_D_FFT>.
+Unit <AD9244> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DAC8551>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <DAC8551> synthesized (advanced).
+
+Synthesizing (advanced) Unit <GenWave>.
+The following registers are absorbed into accumulator <addra>: 1 register on signal <addra>.
+Unit <GenWave> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Gen_clk>.
+The following registers are absorbed into counter <count_clk_DAC>: 1 register on signal <count_clk_DAC>.
+The following registers are absorbed into counter <count_clk_ADC_W>: 1 register on signal <count_clk_ADC_W>.
+The following registers are absorbed into counter <count_clk_ADC_R>: 1 register on signal <count_clk_ADC_R>.
+Unit <Gen_clk> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RAM_ADC>.
+INFO:Xst:3226 - The RAM <Mram_Mem1> will be implemented as a BLOCK RAM, absorbing the following register(s): <Data_O_FFT>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 14-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk_W>         | rise     |
+    |     weA            | connected to signal <WriteEn>       | high     |
+    |     addrA          | connected to signal <Addr_W>        |          |
+    |     diA            | connected to signal <_n0024>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 14-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk_R_FFT>     | rise     |
+    |     enB            | connected to signal <ReadEn_FFT>    | high     |
+    |     addrB          | connected to signal <Addr_R_FFT>    |          |
+    |     doB            | connected to signal <Data_O_FFT>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 14-bit                   |          |
+    |     clkA           | connected to signal <clk_W>         | rise     |
+    |     weA            | connected to signal <WriteEn>       | high     |
+    |     addrA          | connected to signal <Addr_W>        |          |
+    |     diA            | connected to signal <_n0024>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 14-bit                   |          |
+    |     addrB          | connected to signal <Addr_R_Serial> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RAM_ADC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fir_module>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0005_GND_22_o_add_82_OUT1> :
+ 	<Madd_n0193[18:0]> in block <fir_module>, 	<Madd_n0196[19:0]> in block <fir_module>, 	<Madd_n0199[20:0]> in block <fir_module>, 	<Madd_n0202[21:0]> in block <fir_module>, 	<Madd__n0270> in block <fir_module>, 	<Madd__n0271> in block <fir_module>, 	<Madd__n0272> in block <fir_module>.
+Unit <fir_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <my_FFT>.
+The following registers are absorbed into counter <Addr_W_FFT1>: 1 register on signal <Addr_W_FFT1>.
+Unit <my_FFT> synthesized (advanced).
+
+Synthesizing (advanced) Unit <my_uart_rx>.
+The following registers are absorbed into counter <num>: 1 register on signal <num>.
+Unit <my_uart_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <my_uart_tx>.
+The following registers are absorbed into counter <num>: 1 register on signal <num>.
+Unit <my_uart_tx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <speed_setting>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <speed_setting> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 256x14-bit dual-port block RAM                        : 2
+ 256x14-bit dual-port distributed RAM                  : 2
+# Adders/Subtractors                                   : 73
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 2
+ 18-bit adder                                          : 66
+ 20-bit adder                                          : 1
+ 8-bit adder                                           : 3
+# Adder Trees                                          : 2
+ 23-bit / 11-inputs adder tree                         : 2
+# Counters                                             : 16
+ 13-bit up counter                                     : 2
+ 21-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 40-bit up counter                                     : 2
+ 5-bit up counter                                      : 2
+ 8-bit up counter                                      : 7
+# Accumulators                                         : 1
+ 15-bit up loadable accumulator                        : 1
+# Registers                                            : 4070
+ Flip-Flops                                            : 4070
+# Comparators                                          : 18
+ 14-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 2
+ 3-bit comparator not equal                            : 1
+ 40-bit comparator greater                             : 2
+ 5-bit comparator greater                              : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 225
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 59
+ 1-bit 4-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 12
+ 14-bit 7-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 4
+ 18-bit 2-to-1 multiplexer                             : 88
+ 20-bit 2-to-1 multiplexer                             : 2
+ 23-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 40
+ 8-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 4
+# Xors                                                 : 2
+ 8-bit xor4                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <rx_int> in Unit <my_uart_rx> is equivalent to the following FF/Latch, which will be removed : <bps_start> 
+INFO:Xst:2261 - The FF/Latch <tx_en> in Unit <my_uart_tx> is equivalent to the following FF/Latch, which will be removed : <bps_start> 
+INFO:Xst:2261 - The FF/Latch <Squ_out_0> in Unit <GenWave> is equivalent to the following 12 FFs/Latches, which will be removed : <Squ_out_1> <Squ_out_2> <Squ_out_3> <Squ_out_4> <Squ_out_5> <Squ_out_6> <Squ_out_7> <Squ_out_8> <Squ_out_9> <Squ_out_10> <Squ_out_11> <Squ_out_12> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_S[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_1/uut_rx_bridge/FSM_1> on signal <cstate[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 010
+ 0011  | 011
+ 0100  | 100
+ 0101  | 101
+ 0110  | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <DAC8551_Amp/FSM_2> on signal <currentstate[1:2]> with user encoding.
+Optimizing FSM <DAC8551_Bias/FSM_2> on signal <currentstate[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1293 - FF/Latch <s0_17> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s0_16> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s0_15> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s0_14> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s3_17> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s3_2> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s3_1> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s3_0> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s2_17> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s2_16> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s2_1> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s2_0> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s1_17> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s1_16> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s1_15> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s1_0> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0_16> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a0_17> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a1_0> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a1_1> has a constant value of 0 in block <fir_mult>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DataTX_1_7> has a constant value of 0 in block <Ctr_UART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tri_out_0> has a constant value of 0 in block <GenWave>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <pll_controller> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <Proj_ECS> ...
+
+Optimizing unit <AD9244> ...
+
+Optimizing unit <fir_module> ...
+
+Optimizing unit <fir_mult> ...
+
+Optimizing unit <RAM_ADC> ...
+
+Optimizing unit <Gen_clk> ...
+
+Optimizing unit <tx_bridge> ...
+
+Optimizing unit <speed_setting> ...
+
+Optimizing unit <my_uart_rx> ...
+
+Optimizing unit <rx_bridge> ...
+
+Optimizing unit <my_uart_tx> ...
+
+Optimizing unit <Ctr_UART> ...
+
+Optimizing unit <DAC8551> ...
+
+Optimizing unit <my_FFT> ...
+
+Optimizing unit <DDS_Core> ...
+
+Optimizing unit <GenWave> ...
+WARNING:Xst:2677 - Node <rdy_W> of sequential type is unconnected in block <AD9244_2>.
+WARNING:Xst:2677 - Node <dout_0> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_1> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_2> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_3> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_4> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_5> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_6> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_7> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_8> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_0> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_1> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_2> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_3> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_4> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_5> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_6> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_7> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:2677 - Node <dout_8> of sequential type is unconnected in block <low_pass_filter>.
+WARNING:Xst:1293 - FF/Latch <dout_22> has a constant value of 0 in block <low_pass_filter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_store_22> has a constant value of 0 in block <AD9244_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <dout_22> has a constant value of 0 in block <low_pass_filter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_store_22> has a constant value of 0 in block <AD9244_1>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <ReadEn_Im_FFT1> in Unit <my_FFT_1> is the opposite to the following FF/Latch, which will be removed : <ReadEn_Re_FFT1> 
+INFO:Xst:3203 - The FF/Latch <ReadEn_Im_FFT2> in Unit <my_FFT_1> is the opposite to the following FF/Latch, which will be removed : <ReadEn_Re_FFT2> 
+INFO:Xst:2261 - The FF/Latch <Squ_out_0> in Unit <GenWave_1> is equivalent to the following FF/Latch, which will be removed : <Squ_out_13> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Proj_ECS, actual ratio is 30.
+INFO:Xst:2260 - The FF/Latch <blk000004c3> in Unit <FFT_1> is equivalent to the following FF/Latch : <blk0000073b> 
+INFO:Xst:2260 - The FF/Latch <blk000004c3> in Unit <FFT_1> is equivalent to the following FF/Latch : <blk0000073b> 
+INFO:Xst:2260 - The FF/Latch <blk000004c3> in Unit <FFT_1> is equivalent to the following FF/Latch : <blk0000073b> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3814
+ Flip-Flops                                            : 3814
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Proj_ECS.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7605
+#      GND                         : 55
+#      INV                         : 84
+#      LUT1                        : 236
+#      LUT2                        : 2496
+#      LUT3                        : 680
+#      LUT4                        : 451
+#      LUT5                        : 162
+#      LUT6                        : 219
+#      MUXCY                       : 1583
+#      MUXF7                       : 30
+#      MUXF8                       : 9
+#      VCC                         : 31
+#      XORCY                       : 1569
+# FlipFlops/Latches                : 5018
+#      FD                          : 284
+#      FDC                         : 35
+#      FDCE                        : 32
+#      FDE                         : 937
+#      FDP                         : 1
+#      FDR                         : 3057
+#      FDRE                        : 639
+#      FDS                         : 6
+#      FDSE                        : 27
+# RAMS                             : 214
+#      RAM128X1D                   : 148
+#      RAM64X1S                    : 34
+#      RAMB16BWER                  : 26
+#      RAMB8BWER                   : 6
+# Shift Registers                  : 275
+#      SRL16E                      : 100
+#      SRLC16E                     : 166
+#      SRLC32E                     : 9
+# Clock Buffers                    : 8
+#      BUFG                        : 8
+# IO Buffers                       : 79
+#      IBUF                        : 30
+#      IBUFG                       : 1
+#      OBUF                        : 48
+# DSPs                             : 10
+#      DSP48A1                     : 10
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            5018  out of  11440    43%  
+ Number of Slice LUTs:                 5229  out of   5720    91%  
+    Number used as Logic:              4328  out of   5720    75%  
+    Number used as Memory:              901  out of   1440    62%  
+       Number used as RAM:              626
+       Number used as SRL:              275
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6787
+   Number with an unused Flip Flop:    1769  out of   6787    26%  
+   Number with an unused LUT:          1558  out of   6787    22%  
+   Number of fully used LUT-FF pairs:  3460  out of   6787    50%  
+   Number of unique control sets:       138
+
+IO Utilization: 
+ Number of IOs:                          81
+ Number of bonded IOBs:                  78  out of    102    76%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               29  out of     32    90%  
+    Number using Block RAM only:         29
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
+ Number of DSP48A1s:                     10  out of     16    62%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                               | Clock buffer(FF name)                                                                                                                                   | Load  |
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0| BUFG                                                                                                                                                    | 317   |
+Gen_clk_1/clk_W_AD9244_fir                 | BUFG                                                                                                                                                    | 2943  |
+Gen_clk_1/count_clk_ADC_R_20               | BUFG                                                                                                                                                    | 172   |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4| BUFG                                                                                                                                                    | 1653  |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3| BUFG                                                                                                                                                    | 1     |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1| BUFG                                                                                                                                                    | 42    |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2| BUFG                                                                                                                                                    | 41    |
+Gen_clk_1/clk_25m                          | NONE(uart_1/uut_tx_bridge/txen)                                                                                                                         | 149   |
+Gen_clk_1/clk_DAC8551                      | NONE(DAC8551_Bias/Data_store_0)                                                                                                                         | 100   |
+Gen_clk_1/clk_DAC904                       | NONE(DDS_Core_1/Sel_WaveFunc_pre_0)                                                                                                                     | 105   |
+DDS_Core_1/GenWave_1/rom_sin_1/N1          | NONE(DDS_Core_1/GenWave_1/rom_sin_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 26    |
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.168ns (Maximum Frequency: 122.433MHz)
+   Minimum input arrival time before clock: 9.693ns
+   Maximum output required time after clock: 5.654ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0'
+  Clock period: 6.392ns (frequency: 156.454MHz)
+  Total number of paths / destination ports: 1374 / 681
+-------------------------------------------------------------------------
+Delay:               6.392ns (Levels of Logic = 3)
+  Source:            Ctr_UART_1/rst_sys (FF)
+  Destination:       Ctr_UART_1/FFT_Rlength_0 (FF)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0 rising
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: Ctr_UART_1/rst_sys to Ctr_UART_1/FFT_Rlength_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.525   0.944  rst_sys (rst_sys)
+     end scope: 'Ctr_UART_1:rst_sys'
+     LUT2:I1->O           33   0.254   1.536  rst1 (rst)
+     begin scope: 'Ctr_UART_1:rst'
+     INV:I->O            213   0.255   2.419  rst_inv1051_INV_0 (rst_inv)
+     FDRE:R                    0.459          FFT_Rlength_0
+    ----------------------------------------
+    Total                      6.392ns (1.493ns logic, 4.899ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/clk_W_AD9244_fir'
+  Clock period: 8.168ns (frequency: 122.433MHz)
+  Total number of paths / destination ports: 1413822 / 3317
+-------------------------------------------------------------------------
+Delay:               8.168ns (Levels of Logic = 28)
+  Source:            AD9244_2/low_pass_filter/m10/fltd_0 (FF)
+  Destination:       AD9244_2/low_pass_filter/dout_21 (FF)
+  Source Clock:      Gen_clk_1/clk_W_AD9244_fir rising
+  Destination Clock: Gen_clk_1/clk_W_AD9244_fir rising
+
+  Data Path: AD9244_2/low_pass_filter/m10/fltd_0 to AD9244_2/low_pass_filter/dout_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.525   0.954  fltd_0 (fltd_0)
+     end scope: 'AD9244_2/low_pass_filter/m10:fltd<0>'
+     LUT3:I0->O            1   0.235   0.682  ADDERTREE_INTERNAL_Madd6 (ADDERTREE_INTERNAL_Madd6)
+     LUT4:I3->O            1   0.254   0.000  ADDERTREE_INTERNAL_Madd6_lut<0>1 (ADDERTREE_INTERNAL_Madd6_lut<0>1)
+     MUXCY:S->O            1   0.215   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_0 (ADDERTREE_INTERNAL_Madd6_cy<0>1)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_1 (ADDERTREE_INTERNAL_Madd6_cy<0>2)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_2 (ADDERTREE_INTERNAL_Madd6_cy<0>3)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_3 (ADDERTREE_INTERNAL_Madd6_cy<0>4)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_4 (ADDERTREE_INTERNAL_Madd6_cy<0>5)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_5 (ADDERTREE_INTERNAL_Madd6_cy<0>6)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_6 (ADDERTREE_INTERNAL_Madd6_cy<0>7)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_7 (ADDERTREE_INTERNAL_Madd6_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_8 (ADDERTREE_INTERNAL_Madd6_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_9 (ADDERTREE_INTERNAL_Madd6_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_10 (ADDERTREE_INTERNAL_Madd6_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_11 (ADDERTREE_INTERNAL_Madd6_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_12 (ADDERTREE_INTERNAL_Madd6_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_13 (ADDERTREE_INTERNAL_Madd6_cy<0>14)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_14 (ADDERTREE_INTERNAL_Madd6_cy<0>15)
+     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd6_cy<0>_15 (ADDERTREE_INTERNAL_Madd6_cy<0>16)
+     XORCY:CI->O           2   0.206   0.726  ADDERTREE_INTERNAL_Madd6_xor<0>_16 (ADDERTREE_INTERNAL_Madd_176)
+     LUT3:I2->O            1   0.254   0.682  ADDERTREE_INTERNAL_Madd817 (ADDERTREE_INTERNAL_Madd817)
+     LUT2:I1->O            1   0.254   0.000  ADDERTREE_INTERNAL_Madd8_lut<0>18 (ADDERTREE_INTERNAL_Madd8_lut<0>18)
+     MUXCY:S->O            1   0.215   0.000  ADDERTREE_INTERNAL_Madd8_cy<0>_17 (ADDERTREE_INTERNAL_Madd8_cy<0>18)
+     XORCY:CI->O           2   0.206   0.726  ADDERTREE_INTERNAL_Madd8_xor<0>_18 (ADDERTREE_INTERNAL_Madd_198)
+     LUT3:I2->O            1   0.254   0.682  ADDERTREE_INTERNAL_Madd919 (ADDERTREE_INTERNAL_Madd919)
+     LUT4:I3->O            1   0.254   0.000  ADDERTREE_INTERNAL_Madd9_lut<0>20 (ADDERTREE_INTERNAL_Madd9_lut<0>20)
+     MUXCY:S->O            0   0.215   0.000  ADDERTREE_INTERNAL_Madd9_cy<0>_19 (ADDERTREE_INTERNAL_Madd9_cy<0>20)
+     XORCY:CI->O           1   0.206   0.000  ADDERTREE_INTERNAL_Madd9_xor<0>_20 (ADDERTREE_INTERNAL_Madd_2110)
+     FDR:D                     0.074          dout_21
+    ----------------------------------------
+    Total                      8.168ns (3.716ns logic, 4.452ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/count_clk_ADC_R_20'
+  Clock period: 6.747ns (frequency: 148.211MHz)
+  Total number of paths / destination ports: 1598 / 272
+-------------------------------------------------------------------------
+Delay:               6.747ns (Levels of Logic = 4)
+  Source:            my_FFT_1/Addr_R_FFT1_2 (FF)
+  Destination:       my_FFT_1/Data_send_FFT1_0 (FF)
+  Source Clock:      Gen_clk_1/count_clk_ADC_R_20 rising
+  Destination Clock: Gen_clk_1/count_clk_ADC_R_20 rising
+
+  Data Path: my_FFT_1/Addr_R_FFT1_2 to my_FFT_1/Data_send_FFT1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.525   1.138  Addr_R_FFT1_2 (Addr_R_FFT1_2)
+     LUT6:I3->O            1   0.235   0.681  FFT_Rlength[7]_INV_108_o2 (FFT_Rlength[7]_INV_108_o1)
+     MUXF7:S->O            1   0.185   0.682  FFT_Rlength[7]_INV_108_o1 (FFT_Rlength[7]_INV_108_o2)
+     LUT5:I4->O           11   0.254   1.039  FFT_Rlength[7]_INV_108_o21 (FFT_Rlength[7]_INV_108_o)
+     LUT4:I3->O           28   0.254   1.452  _n0176_inv1 (_n0176_inv)
+     FDE:CE                    0.302          Data_send_FFT1_0
+    ----------------------------------------
+    Total                      6.747ns (1.755ns logic, 4.992ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4'
+  Clock period: 4.242ns (frequency: 235.722MHz)
+  Total number of paths / destination ports: 5738 / 3776
+-------------------------------------------------------------------------
+Delay:               4.242ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       my_FFT_1/FFT_1/blk00000079 (FF)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4 rising
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4 rising
+
+  Data Path: sec_inst to my_FFT_1/FFT_1/blk00000079
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           49   0.525   1.803  sec_inst (sec_net)
+     end scope: 'my_FFT_1/FFT_1/blk000003bc:Q<0>'
+     INV:I->O             23   0.255   1.357  blk00000743 (sig00000092)
+     FDE:CE                    0.302          blk000000bd
+    ----------------------------------------
+    Total                      4.242ns (1.082ns logic, 3.160ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3'
+  Clock period: 3.752ns (frequency: 266.507MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.752ns (Levels of Logic = 1)
+  Source:            Gen_clk_1/clk_DAC8551 (FF)
+  Destination:       Gen_clk_1/clk_DAC8551 (FF)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3 rising
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3 rising
+
+  Data Path: Gen_clk_1/clk_DAC8551 to Gen_clk_1/clk_DAC8551
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             103   0.525   2.217  clk_DAC8551 (clk_DAC8551)
+     INV:I->O              1   0.255   0.681  clk_DAC8551_INV_9_o1_INV_0 (clk_DAC8551_INV_9_o)
+     FD:D                      0.074          clk_DAC8551
+    ----------------------------------------
+    Total                      3.752ns (0.854ns logic, 2.898ns route)
+                                       (22.8% logic, 77.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1'
+  Clock period: 5.867ns (frequency: 170.430MHz)
+  Total number of paths / destination ports: 69782 / 44
+-------------------------------------------------------------------------
+Delay:               5.867ns (Levels of Logic = 62)
+  Source:            Gen_clk_1/count_clk_ADC_W_1 (FF)
+  Destination:       Gen_clk_1/count_clk_ADC_W_39 (FF)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1 rising
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: Gen_clk_1/count_clk_ADC_W_1 to Gen_clk_1/count_clk_ADC_W_39
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   1.042  count_clk_ADC_W_1 (count_clk_ADC_W_1)
+     LUT4:I0->O            0   0.254   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_lutdi (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<0> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<1> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<2> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<3> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<4> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<5> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<6> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<7> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<8> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<9> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<10> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<11> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<12> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<13> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<14> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<15> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<16> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<17> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<18> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<18>)
+     MUXCY:CI->O          42   0.023   1.795  Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<19> (Mcompar_count_clk_ADC_W[39]_cnt_AD9244_W[39]_LessThan_10_o_cy<19>)
+     LUT2:I0->O            1   0.250   0.000  Mcount_count_clk_ADC_W_lut<0> (Mcount_count_clk_ADC_W_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_count_clk_ADC_W_cy<0> (Mcount_count_clk_ADC_W_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<1> (Mcount_count_clk_ADC_W_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<2> (Mcount_count_clk_ADC_W_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<3> (Mcount_count_clk_ADC_W_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<4> (Mcount_count_clk_ADC_W_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<5> (Mcount_count_clk_ADC_W_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<6> (Mcount_count_clk_ADC_W_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<7> (Mcount_count_clk_ADC_W_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<8> (Mcount_count_clk_ADC_W_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<9> (Mcount_count_clk_ADC_W_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<10> (Mcount_count_clk_ADC_W_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<11> (Mcount_count_clk_ADC_W_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<12> (Mcount_count_clk_ADC_W_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<13> (Mcount_count_clk_ADC_W_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<14> (Mcount_count_clk_ADC_W_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<15> (Mcount_count_clk_ADC_W_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<16> (Mcount_count_clk_ADC_W_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<17> (Mcount_count_clk_ADC_W_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<18> (Mcount_count_clk_ADC_W_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<19> (Mcount_count_clk_ADC_W_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<20> (Mcount_count_clk_ADC_W_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<21> (Mcount_count_clk_ADC_W_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<22> (Mcount_count_clk_ADC_W_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<23> (Mcount_count_clk_ADC_W_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<24> (Mcount_count_clk_ADC_W_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<25> (Mcount_count_clk_ADC_W_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<26> (Mcount_count_clk_ADC_W_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<27> (Mcount_count_clk_ADC_W_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<28> (Mcount_count_clk_ADC_W_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<29> (Mcount_count_clk_ADC_W_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<30> (Mcount_count_clk_ADC_W_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<31> (Mcount_count_clk_ADC_W_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<32> (Mcount_count_clk_ADC_W_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<33> (Mcount_count_clk_ADC_W_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<34> (Mcount_count_clk_ADC_W_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<35> (Mcount_count_clk_ADC_W_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<36> (Mcount_count_clk_ADC_W_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_ADC_W_cy<37> (Mcount_count_clk_ADC_W_cy<37>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_count_clk_ADC_W_cy<38> (Mcount_count_clk_ADC_W_cy<38>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_count_clk_ADC_W_xor<39> (Mcount_count_clk_ADC_W39)
+     FDR:D                     0.074          count_clk_ADC_W_39
+    ----------------------------------------
+    Total                      5.867ns (3.030ns logic, 2.837ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2'
+  Clock period: 5.867ns (frequency: 170.430MHz)
+  Total number of paths / destination ports: 69701 / 41
+-------------------------------------------------------------------------
+Delay:               5.867ns (Levels of Logic = 62)
+  Source:            Gen_clk_1/count_clk_DAC_1 (FF)
+  Destination:       Gen_clk_1/count_clk_DAC_39 (FF)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2 rising
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Gen_clk_1/count_clk_DAC_1 to Gen_clk_1/count_clk_DAC_39
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   1.042  count_clk_DAC_1 (count_clk_DAC_1)
+     LUT4:I0->O            0   0.254   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_lutdi (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<0> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<1> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<2> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<3> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<4> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<5> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<6> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<7> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<8> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<9> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<10> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<11> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<12> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<13> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<14> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<15> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<16> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<17> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<18> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<18>)
+     MUXCY:CI->O          42   0.023   1.795  Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<19> (Mcompar_count_clk_DAC[39]_cnt_DAC904[39]_LessThan_2_o_cy<19>)
+     LUT2:I0->O            1   0.250   0.000  Mcount_count_clk_DAC_lut<0> (Mcount_count_clk_DAC_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_count_clk_DAC_cy<0> (Mcount_count_clk_DAC_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<1> (Mcount_count_clk_DAC_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<2> (Mcount_count_clk_DAC_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<3> (Mcount_count_clk_DAC_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<4> (Mcount_count_clk_DAC_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<5> (Mcount_count_clk_DAC_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<6> (Mcount_count_clk_DAC_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<7> (Mcount_count_clk_DAC_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<8> (Mcount_count_clk_DAC_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<9> (Mcount_count_clk_DAC_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<10> (Mcount_count_clk_DAC_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<11> (Mcount_count_clk_DAC_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<12> (Mcount_count_clk_DAC_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<13> (Mcount_count_clk_DAC_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<14> (Mcount_count_clk_DAC_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<15> (Mcount_count_clk_DAC_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<16> (Mcount_count_clk_DAC_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<17> (Mcount_count_clk_DAC_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<18> (Mcount_count_clk_DAC_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<19> (Mcount_count_clk_DAC_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<20> (Mcount_count_clk_DAC_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<21> (Mcount_count_clk_DAC_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<22> (Mcount_count_clk_DAC_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<23> (Mcount_count_clk_DAC_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<24> (Mcount_count_clk_DAC_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<25> (Mcount_count_clk_DAC_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<26> (Mcount_count_clk_DAC_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<27> (Mcount_count_clk_DAC_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<28> (Mcount_count_clk_DAC_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<29> (Mcount_count_clk_DAC_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<30> (Mcount_count_clk_DAC_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<31> (Mcount_count_clk_DAC_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<32> (Mcount_count_clk_DAC_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<33> (Mcount_count_clk_DAC_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<34> (Mcount_count_clk_DAC_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<35> (Mcount_count_clk_DAC_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<36> (Mcount_count_clk_DAC_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_clk_DAC_cy<37> (Mcount_count_clk_DAC_cy<37>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_count_clk_DAC_cy<38> (Mcount_count_clk_DAC_cy<38>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_count_clk_DAC_xor<39> (Mcount_count_clk_DAC39)
+     FDR:D                     0.074          count_clk_DAC_39
+    ----------------------------------------
+    Total                      5.867ns (3.030ns logic, 2.837ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/clk_25m'
+  Clock period: 6.279ns (frequency: 159.261MHz)
+  Total number of paths / destination ports: 2784 / 212
+-------------------------------------------------------------------------
+Delay:               6.279ns (Levels of Logic = 4)
+  Source:            uart_1/uut_tx_bridge/fcnt_4 (FF)
+  Destination:       uart_1/uut_tx_bridge/txdb_0 (FF)
+  Source Clock:      Gen_clk_1/clk_25m rising
+  Destination Clock: Gen_clk_1/clk_25m rising
+
+  Data Path: uart_1/uut_tx_bridge/fcnt_4 to uart_1/uut_tx_bridge/txdb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.525   1.186  fcnt_4 (fcnt_4)
+     LUT4:I0->O            2   0.254   1.156  fcnt[19]_GND_11_o_equal_20_o<19>21 (fcnt[19]_GND_11_o_equal_20_o<19>2)
+     LUT5:I0->O            9   0.254   1.431  fcnt[19]_GND_11_o_equal_20_o<19>3 (fcnt[19]_GND_11_o_equal_20_o)
+     LUT6:I0->O            1   0.254   0.910  fcnt[19]_PWR_11_o_select_23_OUT<2>_SW0 (N2)
+     LUT5:I2->O            1   0.235   0.000  fcnt[19]_PWR_11_o_select_23_OUT<2> (fcnt[19]_PWR_11_o_select_23_OUT<6>)
+     FDR:D                     0.074          txdb_6
+    ----------------------------------------
+    Total                      6.279ns (1.596ns logic, 4.683ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/clk_DAC8551'
+  Clock period: 3.906ns (frequency: 256.006MHz)
+  Total number of paths / destination ports: 254 / 116
+-------------------------------------------------------------------------
+Delay:               3.906ns (Levels of Logic = 2)
+  Source:            DAC8551_Bias/currentstate_FSM_FFd2 (FF)
+  Destination:       DAC8551_Bias/currentstate_FSM_FFd1 (FF)
+  Source Clock:      Gen_clk_1/clk_DAC8551 rising
+  Destination Clock: Gen_clk_1/clk_DAC8551 rising
+
+  Data Path: DAC8551_Bias/currentstate_FSM_FFd2 to DAC8551_Bias/currentstate_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             28   0.525   1.681  currentstate_FSM_FFd2 (currentstate_FSM_FFd2)
+     LUT3:I0->O            1   0.235   1.137  currentstate_FSM_FFd1-In1_SW0 (N01)
+     LUT6:I0->O            1   0.254   0.000  currentstate_FSM_FFd1-In1 (currentstate_FSM_FFd1-In1)
+     FDR:D                     0.074          currentstate_FSM_FFd1
+    ----------------------------------------
+    Total                      3.906ns (1.088ns logic, 2.818ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Gen_clk_1/clk_DAC904'
+  Clock period: 5.079ns (frequency: 196.889MHz)
+  Total number of paths / destination ports: 1222 / 418
+-------------------------------------------------------------------------
+Delay:               5.079ns (Levels of Logic = 5)
+  Source:            DDS_Core_1/GenWave_1/rom_sin_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       DDS_Core_1/Data_temp_13 (FF)
+  Source Clock:      Gen_clk_1/clk_DAC904 rising
+  Destination Clock: Gen_clk_1/clk_DAC904 rising
+
+  Data Path: DDS_Core_1/GenWave_1/rom_sin_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to DDS_Core_1/Data_temp_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOPA0    1   2.100   0.958  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.ram_douta<8>)
+     LUT6:I2->O            1   0.254   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_43 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_43)
+     MUXF7:I1->O           1   0.175   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f7_2 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_3_f73)
+     MUXF8:I1->O           1   0.152   1.112  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f8_2 (douta<13>)
+     end scope: 'DDS_Core_1/GenWave_1/rom_sin_1:douta<13>'
+     end scope: 'DDS_Core_1/GenWave_1:Sin_out<13>'
+     LUT6:I1->O            1   0.254   0.000  Mmux_GND_15_o_Sin_out[13]_mux_13_OUT5 (GND_15_o_Sin_out[13]_mux_13_OUT<13>)
+     FDR:D                     0.074          Data_temp_13
+    ----------------------------------------
+    Total                      5.079ns (3.009ns logic, 2.070ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 364 / 364
+-------------------------------------------------------------------------
+Offset:              7.231ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       Ctr_UART_1/FFT_Rlength_0 (FF)
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: rst_btn to Ctr_UART_1/FFT_Rlength_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.984  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I0->O           33   0.250   1.536  rst1 (rst)
+     begin scope: 'Ctr_UART_1:rst'
+     INV:I->O            213   0.255   2.419  rst_inv1051_INV_0 (rst_inv)
+     FDRE:R                    0.459          FFT_Rlength_0
+    ----------------------------------------
+    Total                      7.231ns (2.292ns logic, 4.939ns route)
+                                       (31.7% logic, 68.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/clk_W_AD9244_fir'
+  Total number of paths / destination ports: 3119 / 2937
+-------------------------------------------------------------------------
+Offset:              9.693ns (Levels of Logic = 5)
+  Source:            rst_btn (PAD)
+  Destination:       AD9244_2/low_pass_filter/mem_h3_0 (FF)
+  Destination Clock: Gen_clk_1/clk_W_AD9244_fir rising
+
+  Data Path: rst_btn to AD9244_2/low_pass_filter/mem_h3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.876  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I1->O          305   0.254   2.437  rst_inv1 (rst_inv)
+     begin scope: 'AD9244_2:rst'
+     INV:I->O             25   0.255   1.402  rst_INV_68_o1_INV_0 (rst_INV_68_o)
+     begin scope: 'AD9244_2/low_pass_filter:rst'
+     INV:I->O            243   0.255   2.428  rst_inv1_INV_0 (rst_inv)
+     FDRE:R                    0.459          mem_h3_0
+    ----------------------------------------
+    Total                      9.693ns (2.551ns logic, 7.142ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/count_clk_ADC_R_20'
+  Total number of paths / destination ports: 94 / 94
+-------------------------------------------------------------------------
+Offset:              7.113ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       my_FFT_1/Data_send_FFT1_0 (FF)
+  Destination Clock: Gen_clk_1/count_clk_ADC_R_20 rising
+
+  Data Path: rst_btn to my_FFT_1/Data_send_FFT1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.876  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I1->O          305   0.254   2.666  rst_inv1 (rst_inv)
+     begin scope: 'my_FFT_1:rst'
+     LUT4:I1->O           28   0.235   1.452  _n0176_inv1 (_n0176_inv)
+     FDE:CE                    0.302          Data_send_FFT1_0
+    ----------------------------------------
+    Total                      7.113ns (2.119ns logic, 4.994ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              6.393ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       my_FFT_1/writeEn_FFT1 (FF)
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4 rising
+
+  Data Path: rst_btn to my_FFT_1/writeEn_FFT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.876  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I1->O          305   0.254   2.546  rst_inv1 (rst_inv)
+     begin scope: 'my_FFT_1:rst'
+     LUT2:I0->O            1   0.250   0.681  dv_FFT1 (dv_FFT_0)
+     FDR:R                     0.459          writeEn_FFT1
+    ----------------------------------------
+    Total                      6.393ns (2.291ns logic, 4.102ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              7.032ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       Gen_clk_1/clk_W_AD9244 (FF)
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: rst_btn to Gen_clk_1/clk_W_AD9244
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.984  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I0->O           33   0.250   1.536  rst1 (rst)
+     begin scope: 'Gen_clk_1:rst'
+     INV:I->O            104   0.255   2.220  rst_inv1_INV_0 (rst_inv)
+     FDRE:R                    0.459          clk_W_AD9244_fir
+    ----------------------------------------
+    Total                      7.032ns (2.292ns logic, 4.740ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              7.032ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       Gen_clk_1/count_clk_DAC_0 (FF)
+  Destination Clock: Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2 rising
+
+  Data Path: rst_btn to Gen_clk_1/count_clk_DAC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.984  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I0->O           33   0.250   1.536  rst1 (rst)
+     begin scope: 'Gen_clk_1:rst'
+     INV:I->O            104   0.255   2.220  rst_inv1_INV_0 (rst_inv)
+     FDR:R                     0.459          count_clk_DAC_0
+    ----------------------------------------
+    Total                      7.032ns (2.292ns logic, 4.740ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/clk_25m'
+  Total number of paths / destination ports: 150 / 150
+-------------------------------------------------------------------------
+Offset:              6.531ns (Levels of Logic = 4)
+  Source:            rst_btn (PAD)
+  Destination:       uart_1/uut_rx_bridge/RX_rdy (FF)
+  Destination Clock: Gen_clk_1/clk_25m rising
+
+  Data Path: rst_btn to uart_1/uut_rx_bridge/RX_rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.984  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I0->O           33   0.250   1.536  rst1 (rst)
+     begin scope: 'uart_1:rst'
+     begin scope: 'uart_1/uut_rx_bridge:rst'
+     INV:I->O             44   0.255   1.720  rst_inv1_INV_0 (rst_inv)
+     FDR:R                     0.459          RX_rdy
+    ----------------------------------------
+    Total                      6.531ns (2.292ns logic, 4.239ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/clk_DAC8551'
+  Total number of paths / destination ports: 68 / 68
+-------------------------------------------------------------------------
+Offset:              5.353ns (Levels of Logic = 3)
+  Source:            rst_btn (PAD)
+  Destination:       DAC8551_Bias/q (FF)
+  Destination Clock: Gen_clk_1/clk_DAC8551 rising
+
+  Data Path: rst_btn to DAC8551_Bias/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.876  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I1->O          305   0.254   2.437  rst_inv1 (rst_inv)
+     begin scope: 'DAC8551_Bias:rst'
+     FDR:R                     0.459          q
+    ----------------------------------------
+    Total                      5.353ns (2.041ns logic, 3.313ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Gen_clk_1/clk_DAC904'
+  Total number of paths / destination ports: 97 / 97
+-------------------------------------------------------------------------
+Offset:              5.353ns (Levels of Logic = 3)
+  Source:            rst_btn (PAD)
+  Destination:       DDS_Core_1/Data_temp_0 (FF)
+  Destination Clock: Gen_clk_1/clk_DAC904 rising
+
+  Data Path: rst_btn to DDS_Core_1/Data_temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.876  rst_btn_IBUF (rst_btn_IBUF)
+     LUT2:I1->O          305   0.254   2.437  rst_inv1 (rst_inv)
+     begin scope: 'DDS_Core_1:rst'
+     FDR:R                     0.459          Data_temp_0
+    ----------------------------------------
+    Total                      5.353ns (2.041ns logic, 3.313ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 2)
+  Source:            Ctr_UART_1/DIO_OUT1_7 (FF)
+  Destination:       DIO_OUT1<7> (PAD)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: Ctr_UART_1/DIO_OUT1_7 to DIO_OUT1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             1   0.525   0.681  DIO_OUT1_7 (DIO_OUT1_7)
+     end scope: 'Ctr_UART_1:DIO_OUT1<7>'
+     OBUF:I->O                 2.912          DIO_OUT1_7_OBUF (DIO_OUT1<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/clk_DAC904'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 2)
+  Source:            DDS_Core_1/Data_Out_13 (FF)
+  Destination:       Data_Out_DAC904<13> (PAD)
+  Source Clock:      Gen_clk_1/clk_DAC904 rising
+
+  Data Path: DDS_Core_1/Data_Out_13 to Data_Out_DAC904<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  Data_Out_13 (Data_Out_13)
+     end scope: 'DDS_Core_1:Data_Out<13>'
+     OBUF:I->O                 2.912          Data_Out_DAC904_13_OBUF (Data_Out_DAC904<13>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/clk_25m'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 2)
+  Source:            uart_1/my_uart_tx/uart_tx_r (FF)
+  Destination:       uart_tx (PAD)
+  Source Clock:      Gen_clk_1/clk_25m rising
+
+  Data Path: uart_1/my_uart_tx/uart_tx_r to uart_tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.525   0.725  uart_tx_r (uart_tx_r)
+     end scope: 'uart_1/my_uart_tx:uart_tx'
+     end scope: 'uart_1:uart_tx'
+     OBUF:I->O                 2.912          uart_tx_OBUF (uart_tx)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.654ns (Levels of Logic = 2)
+  Source:            Gen_clk_1/clk_DAC8551 (FF)
+  Destination:       clk_DAC8551 (PAD)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3 rising
+
+  Data Path: Gen_clk_1/clk_DAC8551 to clk_DAC8551
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             103   0.525   2.217  clk_DAC8551 (clk_DAC8551)
+     end scope: 'Gen_clk_1:clk_DAC8551'
+     OBUF:I->O                 2.912          clk_DAC8551_OBUF (clk_DAC8551)
+    ----------------------------------------
+    Total                      5.654ns (3.437ns logic, 2.217ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/clk_DAC8551'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 2)
+  Source:            DAC8551_Amp/SYNC (FF)
+  Destination:       SYNC_DAC8551 (PAD)
+  Source Clock:      Gen_clk_1/clk_DAC8551 rising
+
+  Data Path: DAC8551_Amp/SYNC to SYNC_DAC8551
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.525   0.681  SYNC (SYNC)
+     end scope: 'DAC8551_Amp:SYNC'
+     OBUF:I->O                 2.912          SYNC_DAC8551_OBUF (SYNC_DAC8551)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.498ns (Levels of Logic = 2)
+  Source:            Gen_clk_1/clk_DAC904 (FF)
+  Destination:       clk_DAC904 (PAD)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Gen_clk_1/clk_DAC904 to clk_DAC904
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             81   0.525   2.061  clk_DAC904 (clk_DAC904)
+     end scope: 'Gen_clk_1:clk_DAC904'
+     OBUF:I->O                 2.912          clk_DAC904_OBUF (clk_DAC904)
+    ----------------------------------------
+    Total                      5.498ns (3.437ns logic, 2.061ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 2)
+  Source:            Gen_clk_1/clk_W_AD9244 (FF)
+  Destination:       clk_W_AD9244 (PAD)
+  Source Clock:      Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: Gen_clk_1/clk_W_AD9244 to clk_W_AD9244
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   0.765  clk_W_AD9244 (clk_W_AD9244)
+     end scope: 'Gen_clk_1:clk_W_AD9244'
+     OBUF:I->O                 2.912          clk_W_AD9244_OBUF (clk_W_AD9244)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Gen_clk_1/clk_25m
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/clk_25m                          |    6.279|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    5.692|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/clk_DAC8551
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/clk_DAC8551                      |    3.906|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    4.723|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/clk_DAC904
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/clk_DAC904                       |    5.079|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    4.723|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/clk_W_AD9244_fir
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/clk_W_AD9244_fir                 |    8.168|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    9.062|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/count_clk_ADC_R_20
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/count_clk_ADC_R_20               |    6.747|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    6.765|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/clk_25m                          |    9.586|         |         |         |
+Gen_clk_1/clk_W_AD9244_fir                 |    4.567|         |         |         |
+Gen_clk_1/count_clk_ADC_R_20               |    4.625|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    6.392|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4|    4.329|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    6.193|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT1|    5.867|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    6.193|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT2|    5.867|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT3|    3.752|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT0|    5.763|         |         |         |
+Gen_clk_1/pll_contr_1/pll_base_inst/CLKOUT4|    4.242|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 37.84 secs
+ 
+--> 
+
+Total memory usage is 315212 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
+

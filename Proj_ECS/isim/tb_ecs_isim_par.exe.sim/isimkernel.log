@@ -1,0 +1,28 @@
+Command line:
+   tb_ecs_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56331
+
+Sat May 12 13:23:29 2018
+
+
+ Elaboration Time: 12.9325 sec
+
+ Current Memory Usage: 1753.67 Meg
+
+ Total Signals          : 350688
+ Total Nets             : 250525
+ Total Signal Drivers   : 232613
+ Total Blocks           : 41099
+ Total Primitive Blocks : 29882
+ Total Processes        : 331630
+ Total Traceable Variables  : 105503
+ Total Scalar Nets and Variables : 4985605
+
+ Total Simulation Time: 88.9206 sec
+
+ Current Memory Usage: 1973.41 Meg
+
+Sat May 12 13:37:43 2018
+

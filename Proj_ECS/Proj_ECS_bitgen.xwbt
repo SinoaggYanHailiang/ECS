@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\Proj_ECS.ncd
+OUTFILE=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\Proj_ECS.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,6 @@
+D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\Proj_ECS.ngc 1526283192
+ipcore_dir/FFT.ngc 1523323234
+ipcore_dir/Dram_fft_re.ngc 1524276518
+ipcore_dir/Dram_fft_im.ngc 1524277306
+ipcore_dir/rom_sin.ngc 1523322545
+OK

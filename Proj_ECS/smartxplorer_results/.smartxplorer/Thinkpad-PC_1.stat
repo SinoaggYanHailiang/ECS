@@ -1,0 +1,8 @@
+START:Strategy:2:MapLogicOpt
+REMOTE_PID:9508
+RUNNING:9508:7336:MapLogicOpt:map:Proj_ECS.ngd: -ol high -xe n -logic_opt on -t 2 -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun2:bslProj_ECS.pcf
+DONE:map:211
+START:Strategy:6:MapLogOptRegDup
+REMOTE_PID:9004
+RUNNING:9004:8432:MapLogOptRegDup:map:Proj_ECS.ngd: -ol high -xe n -logic_opt on -register_duplication on -t 2 -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun6:bslProj_ECS.pcf
+DONE:map:211

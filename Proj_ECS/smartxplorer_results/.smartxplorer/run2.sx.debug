@@ -1,0 +1,45 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:dslogic_opt:spon:sp:dst:sp2:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spD:clcl:clbsl2_FPGA_program:clbslProj_ECS_sinoagg_v22_fft256_dac8551_fir:clbslProj_ECS:sp:dsp:spxc6slx9:dstqg144:ds2:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spProj_ECS.twx:sp:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp2:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapLogicOpt:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqD:cl:bsl:bsl2_FPGA_program:bsl:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bsl:bslProj_ECS:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX_PLANAHEAD': 'D:\\Xilinx\\14.7\\ISE_DS\\PlanAhead'
+'XILINX_DSP': 'D:\\Xilinx\\14.7\\ISE_DS\\ISE'
+'XILINX_EDK': 'D:\\Xilinx\\14.7\\ISE_DS\\EDK'
+'LM_LICENSE_FILE': 'D:\\Program Files (x86)\\modeltech_10.1a\\LICENSE.TXT'
+'XILINX': 'D:\\Xilinx\\14.7\\ISE_DS\\ISE\\'
+'PATH': 'D:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\lib\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\bin\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\ISE\\bin\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\ISE\\lib\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\ISE\\..\\..\\..\\DocNav;D:\\Xilinx\\14.7\\ISE_DS\\PlanAhead\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\bin\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\lib\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\nt\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\powerpc-eabi\\nt\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnuwin\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\arm\\nt\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_be\\bin;D:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_le\\bin;D:\\Xilinx\\14.7\\ISE_DS\\common\\bin\\nt64;D:\\Xilinx\\14.7\\ISE_DS\\common\\lib\\nt64;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Services\\IPT\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\ThinkPad\\Bluetooth Software\\;C:\\Program Files\\ThinkPad\\Bluetooth Software\\syswow64;C:\\Program Files (x86)\\Lenovo\\Access Connections\\;D:\\Program Files\\MATLAB\\R2017a\\runtime\\win64;D:\\Program Files\\MATLAB\\R2017a\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;D:\\Program Files (x86)\\modeltech_10.1a\\win32'}
+envDict = {}
+Thinkpad-PC_1.stat:D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results\.smartxplorer\.sx.keepAlive.Thinkpad-PC_1
+INFO: total number of threads running this host None
+...searching for file: maplogicopt.xds
+Could not find XDS File: maplogicopt.xds in path: D:\Xilinx\14.7\ISE_DS\ISE\\spartan6\data\smartxplorer
+Creating XDS file ... maplogicopt.xds
+###################################
+
+      <property name = "Map:Placer Effort Level"
+               value = "High" />
+      <property name = "Map:Placer Extra Effort"
+               value = "Normal" />
+      <property name = "Map:Combinatorial Logic Optimization"
+               value = "true" />
+      <property name = "Map:Starting Placer Cost Table (1-100)"
+               value = "2" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Place &amp; Route:Extra Effort (Highest PAR level only)"
+               value = "Normal" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-2" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -ol high -xe n -logic_opt on -t 2 -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun2:bslProj_ECS.pcf...
+runTask: map Proj_ECS.ngd -ol high -xe n -logic_opt on -t 2 -w -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results\run2\Proj_ECS.pcf
+args = ['map', 'Proj_ECS.ngd', '-ol', 'high', '-xe', 'n', '-logic_opt', 'on', '-t', '2', '-w', '-p', 'xc6slx9-tqg144-2', '-o', 'Proj_ECS_map.ncd', 'D:\\2_FPGA_program\\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\\Proj_ECS\\smartxplorer_results\\run2\\Proj_ECS.pcf']
+ERROR: Missing output file: Proj_ECS_map.ncd for program: map
+D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results\.smartxplorer\Thinkpad-PC_1.stat- ERROR: Failed in MAP

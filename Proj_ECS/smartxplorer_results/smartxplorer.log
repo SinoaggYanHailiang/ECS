@@ -1,0 +1,33 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc6slx9-tqg144-2 -b -wd smartxplorer_results Proj_ECS.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx " -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\Proj_ECS.ngd 
+write_dir=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results 
+host_list=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\hostlistfile.txt 
+part=xc6slx9-tqg144-2 
+strategy_file=None 
+notify=None 
+source_dir=D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx "
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+INFO: No best strategy!
+
+SmartXplorer Done. See file 'smartxplorer.txt' for detailed report.

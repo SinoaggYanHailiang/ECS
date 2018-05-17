@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/Dram_fft_re.v"
+verilog work "tb_Dram_fft_re.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

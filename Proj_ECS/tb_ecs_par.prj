@@ -1,0 +1,2 @@
+verilog work "netgen/par/Proj_ECS_timesim.v"
+verilog work "tb_project/tb_ecs.v"

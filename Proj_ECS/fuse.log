@@ -1,0 +1,141 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib simprims_ver -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_ecs_isim_par.exe -prj D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_ecs_par.prj work.tb_ecs work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/netgen/par/Proj_ECS_timesim.v" into library work
+Analyzing Verilog file "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_project/tb_ecs.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1573: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1577: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1660: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1664: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1721: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1722: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1773: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1774: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1869: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1870: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1875: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1876: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1979: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1980: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1985: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1986: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1692: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1707: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1711: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1715: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1779: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1794: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1798: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1802: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1847: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1858: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1859: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1860: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1899: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1910: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1911: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1912: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1980: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1981: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2001: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2002: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2007: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2008: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2013: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2014: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2090: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2091: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2111: Element index 15 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2112: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2117: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2118: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2123: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2124: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1968: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1995: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2076: Element index 7 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 2105: Element index 7 into mem is out of bounds
+Completed static elaboration
+Compiling module X_BUF
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1400: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1404: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1486: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB8BWER.v" Line 1490: Element index 3 into memp is out of bounds
+Compiling module X_RAMB8BWER(DATA_WIDTH_A=18,DATA...
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1519: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1534: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1538: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1542: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1605: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1620: Element index 1 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1624: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/simprims/X_RAMB16BWER.v" Line 1628: Element index 3 into memp is out of bounds
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=9,DATA...
+Compiling module X_INV
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB16BWER(DATA_WIDTH_A=1,DATA...
+Compiling module X_RAMB8BWER(DATA_WIDTH_A=36,DATA...
+Compiling module X_LUT6(INIT=64'b1100110000000000...
+Compiling module X_LUT5
+Compiling module X_CARRY4
+Compiling module sffsrce
+Compiling module X_SFF
+Compiling module X_ZERO
+Compiling module X_AND2B1L
+Compiling module ffsrce
+Compiling module X_FF
+Compiling module X_ONE
+Compiling module X_IPAD
+Compiling module X_OPAD
+Compiling module X_OBUF
+Compiling module X_ODDR2_default
+Compiling module X_PLL_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module X_CKBUF
+Compiling module X_DSP48A1(CARRYINREG=0,CARRYOUTR...
+Compiling module X_DSP48A1(A0REG=1,B0REG=1,CARRYI...
+Compiling module X_DSP48A1(A0REG=1,B0REG=1,CARRYO...
+Compiling module X_DSP48A1(A0REG=1,B0REG=1,CARRYO...
+Compiling module X_DSP48A1(CARRYOUTREG=0,CREG=0,D...
+Compiling module X_BUFIO2_default
+Compiling module X_BUFIO2FB
+Compiling module mux
+Compiling module X_MUX2
+Compiling module X_RAMD64_ADV
+Compiling module X_SRLC16E
+Compiling module X_SFF(INIT=1'b1)
+Compiling module X_SRLC32E
+Compiling module X_FF(INIT=1'b1)
+Compiling module Proj_ECS
+Compiling module tb_ecs
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 6070 Verilog Units
+Built simulation executable D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_ecs_isim_par.exe
+Fuse Memory Usage: 329820 KB
+Fuse CPU Usage: 44725 ms

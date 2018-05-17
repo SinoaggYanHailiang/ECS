@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+fir_mult instance_name (
+    .rst(rst), 
+    .clk(clk), 
+    .data(data), 
+    .coe(coe), 
+    .fltd(fltd)
+    );
+
+

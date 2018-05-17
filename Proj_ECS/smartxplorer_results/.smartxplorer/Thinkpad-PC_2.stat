@@ -1,0 +1,4 @@
+START:Strategy:3:MapGlobOptIOReg
+REMOTE_PID:9480
+RUNNING:9480:9944:MapGlobOptIOReg:map:Proj_ECS.ngd: -ol high -global_opt speed -pr b -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun3:bslProj_ECS.pcf
+DONE:map:211

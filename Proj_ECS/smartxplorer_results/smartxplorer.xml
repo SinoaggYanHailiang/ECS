@@ -1,0 +1,203 @@
+
+<smartXplorerReport>
+    <command>"D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc6slx9-tqg144-2 -b -wd smartxplorer_results Proj_ECS.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx " -host_list hostlistfile.txt -max_runs 7
+    </command>
+    <programStatus>Done
+    </programStatus>
+    <programPID>10020
+    </programPID>
+    
+    <strategy name="MapRunTime">
+        <strategyData>map  -ol high -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapruntime.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run1
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 29s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogicOpt">
+        <strategyData>map  -ol high -xe n -logic_opt on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogicopt.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run2
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 35s
+        </runTime>
+    </strategy>
+    <strategy name="MapGlobOptIOReg">
+        <strategyData>map  -ol high -global_opt speed -pr b -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapgloboptioreg.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run3
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 3m 11s
+        </runTime>
+    </strategy>
+    <strategy name="MapRegDup">
+        <strategyData>map  -ol high -xe n -register_duplication on -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapregdup.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run4
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 41s
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffortIOReg">
+        <strategyData>map  -ol high -xe n -pr b -t 7 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapextraeffortioreg.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run5
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 5s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogOptRegDup">
+        <strategyData>map  -ol high -xe n -logic_opt on -register_duplication on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogoptregdup.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run6
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 11s
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffort2">
+        <strategyData>map  -ol high -xe n -t 3 -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapextraeffort2.xds
+        </xdsFile>
+        <host name="Thinkpad-PC">
+            <hostData>Windows_NT, Intel64 Family 6 Model 58 Stepping 9, GenuineIntel, 4-processor, -1G RAM
+            </hostData>
+        </host>
+        <runIndex>run7
+        </runIndex>
+        <status>Failed Map
+        </status>
+        <logFile>Proj_ECS_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 1m 17s
+        </runTime>
+    </strategy>
+    <bestStrategy>None
+    </bestStrategy>
+    <envVariables>
+        <env name="LM_LICENSE_FILE"  value="D:\Program Files (x86)\modeltech_10.1a\LICENSE.TXT"/>
+        <env name="XILINX_PLANAHEAD"  value="D:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+        <env name="XILINX_DSP"  value="D:\Xilinx\14.7\ISE_DS\ISE"/>
+        <env name="XILINX_EDK"  value="D:\Xilinx\14.7\ISE_DS\EDK"/>
+        <env name="PATH"  value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files (x86)\Lenovo\Access Connections\;D:\Program Files\MATLAB\R2017a\runtime\win64;D:\Program Files\MATLAB\R2017a\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files (x86)\modeltech_10.1a\win32"/>
+        <env name="XILINX"  value="D:\Xilinx\14.7\ISE_DS\ISE\"/>
+        
+    </envVariables>
+</smartXplorerReport>

@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf
+
+Design file:              Proj_ECS.ncd
+Physical constraint file: Proj_ECS.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_in
+------------+------------+------------+------------+------------+---------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                     | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)    | Phase  |
+------------+------------+------------+------------+------------+---------------------+--------+
+rst_btn     |    7.800(R)|      SLOW  |   -3.698(R)|      FAST  |Gen_clk_1/clkDAC_200m|   0.000|
+            |    8.537(R)|      SLOW  |   -3.050(R)|      FAST  |Gen_clk_1/clk_80m    |   0.000|
+            |    8.587(R)|      SLOW  |   -1.661(R)|      FAST  |clk_50m              |   0.000|
+            |    9.728(R)|      SLOW  |   -3.141(R)|      FAST  |clk_FFT              |   0.000|
+------------+------------+------------+------------+------------+---------------------+--------+
+
+Clock clk_in to Pad
+----------------+-----------------+------------+-----------------+------------+---------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                     | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)    | Phase  |
+----------------+-----------------+------------+-----------------+------------+---------------------+--------+
+DIO_OUT1<0>     |         7.005(R)|      SLOW  |         3.088(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<1>     |         6.991(R)|      SLOW  |         3.094(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<2>     |         6.893(R)|      SLOW  |         3.020(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<3>     |         7.678(R)|      SLOW  |         3.552(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<4>     |         7.128(R)|      SLOW  |         3.145(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<5>     |         8.698(R)|      SLOW  |         4.195(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<6>     |         6.890(R)|      SLOW  |         3.017(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT1<7>     |         8.960(R)|      SLOW  |         4.305(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<0>     |         6.866(R)|      SLOW  |         2.998(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<1>     |         6.929(R)|      SLOW  |         3.032(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<2>     |         7.095(R)|      SLOW  |         3.097(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<3>     |         6.867(R)|      SLOW  |         2.999(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<4>     |         7.642(R)|      SLOW  |         3.414(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<5>     |         7.313(R)|      SLOW  |         3.268(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<6>     |         7.240(R)|      SLOW  |         3.306(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT2<7>     |         8.646(R)|      SLOW  |         4.204(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<0>     |         7.235(R)|      SLOW  |         3.301(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<1>     |         7.452(R)|      SLOW  |         3.375(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<2>     |         7.233(R)|      SLOW  |         3.299(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<3>     |         7.235(R)|      SLOW  |         3.301(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<4>     |         7.297(R)|      SLOW  |         3.284(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<5>     |         7.084(R)|      SLOW  |         3.167(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<6>     |         7.537(R)|      SLOW  |         3.460(R)|      FAST  |clk_50m              |   0.000|
+DIO_OUT3<7>     |         7.529(R)|      SLOW  |         3.407(R)|      FAST  |clk_50m              |   0.000|
+clk_DAC904      |        11.704(R)|      SLOW  |         6.025(R)|      FAST  |Gen_clk_1/clkDAC_200m|   0.000|
+clk_DAC8551     |        10.401(R)|      SLOW  |         5.168(R)|      FAST  |Gen_clk_1/clk_Ref    |   0.000|
+clk_DAC8551_Bias|         8.087(R)|      SLOW  |         3.782(R)|      FAST  |Gen_clk_1/clk_Ref    |   0.000|
+clk_W_AD9244    |         8.725(R)|      SLOW  |         4.157(R)|      FAST  |Gen_clk_1/clk_80m    |   0.000|
+clk_W_AD9244_1  |         8.755(R)|      SLOW  |         4.182(R)|      FAST  |Gen_clk_1/clk_80m    |   0.000|
+----------------+-----------------+------------+-----------------+------------+---------------------+--------+
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    9.207|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon May 14 16:28:51 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 326 MB
+
+
+

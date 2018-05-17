@@ -1,0 +1,124 @@
+##########################################################
+# Company: NUDT
+# Engineer: Cang Liu & Yujin Huang
+# E-mail : liucang@nudt.edu.cn
+# Create Date:    15:51:31 07/25/2016 
+# Design Name: 
+# Module Name:    
+# Project Name:   Electrochemical Workstation
+# Target Devices:  Spartan6
+##########################################################
+## clock
+NET "clk_in" LOC = P56;
+NET "clk_in" IOSTANDARD = LVCMOS33;
+## NET "clk_in" LOC = P56;
+#
+
+##  reset
+NET "rst_btn" LOC = P39;
+NET "rst_btn" IOSTANDARD = LVCMOS33;
+##  NET "rst_btn" LOC = P39;
+#
+##########################################################
+## DIO
+
+NET "DIO_OUT1[0]" LOC = P75; ## P2B1_P --> 1
+NET "DIO_OUT1[1]" LOC = P74; ## P2A6_P --> 2
+NET "DIO_OUT1[2]" LOC = P79; ## P2A4_P --> 3
+NET "DIO_OUT1[3]" LOC = P78; ## P2A2_P --> 4
+NET "DIO_OUT1[4]" LOC = P81; ## P2A0_P --> 5
+NET "DIO_OUT1[5]" LOC = P80; ## P2A1_N --> 6
+NET "DIO_OUT1[6]" LOC = P83; ## P2A3_N --> 7
+NET "DIO_OUT1[7]" LOC = P82; ## P2A5_N --> 8
+ 
+NET "DIO_OUT2[0]" LOC = P85; ## P2A7_N --> 9
+NET "DIO_OUT2[1]" LOC = P84; ## P2B1_N --> 10
+NET "DIO_OUT2[2]" LOC = P88; ## P2B3_N --> 11
+NET "DIO_OUT2[3]" LOC = P87; ## P2B5_N --> 12
+NET "DIO_OUT2[4]" LOC = P93; ## P2B6_N --> 13
+NET "DIO_OUT2[5]" LOC = P92; ## P2B2_P --> 14
+NET "DIO_OUT2[6]" LOC = P62; ## P2A7_P --> 15
+NET "DIO_OUT2[7]" LOC = P67; ## P2A5_P --> 16
+ 
+NET "DIO_OUT3[0]" LOC = P58; ## P2A3_P --> 17  
+NET "DIO_OUT3[1]" LOC = P59; ## P2A1_P --> 18
+NET "DIO_OUT3[2]" LOC = P55; ## P2A0_N --> 19
+NET "DIO_OUT3[3]" LOC = P57; ## P2A2_N --> 20
+NET "DIO_OUT3[4]" LOC = P48; ## P2A4_N --> 21
+NET "DIO_OUT3[5]" LOC = P51; ## P2A6_N --> 22
+NET "DIO_OUT3[6]" LOC = P46; ## P2B0_N --> 23
+NET "DIO_OUT3[7]" LOC = P47; ## P2B2_N --> 24
+
+## NET "DIO_OUT0[0]" LOC = P88;  ## the 25th IO 
+## NET "DIO_OUT0[1]" LOC = L7;   ## unused in this version
+## NET "DIO_OUT0[2]" LOC = T7;   ## unused in this version
+## NET "DIO_OUT0[3]" LOC = L8;   ## unused in this version
+
+##########################################################
+## UART TX and RX signal
+NET "uart_rx" LOC = P95;
+NET "uart_tx" LOC = P94;
+##########################################################
+## DAC Amp
+NET "clk_DAC8551"  LOC = P14;
+NET "SYNC_DAC8551"  LOC = P15;
+NET "D_DAC8551"    LOC = P12;
+## DAC Bias
+NET "clk_DAC8551_Bias"  LOC = P43;
+NET "SYNC_DAC8551_Bias"  LOC = P41;
+NET "D_DAC8551_Bias"    LOC = P44;
+
+NET "clk_DAC904" LOC = P40;
+NET "Data_Out_DAC904[0]" LOC = P16;
+NET "Data_Out_DAC904[1]" LOC = P17;
+NET "Data_Out_DAC904[2]" LOC = P21;
+NET "Data_Out_DAC904[3]" LOC = P22;
+NET "Data_Out_DAC904[4]" LOC = P23;
+NET "Data_Out_DAC904[5]" LOC = P24;
+NET "Data_Out_DAC904[6]" LOC = P26;
+NET "Data_Out_DAC904[7]" LOC = P27;
+NET "Data_Out_DAC904[8]" LOC = P29;
+NET "Data_Out_DAC904[9]" LOC = P30;
+NET "Data_Out_DAC904[10]" LOC = P32;
+NET "Data_Out_DAC904[11]" LOC = P33;
+NET "Data_Out_DAC904[12]" LOC = P34;
+NET "Data_Out_DAC904[13]" LOC = P35;
+
+
+
+## ADC1
+NET "clk_W_AD9244" LOC = P137;
+NET "Data_I_AD9244[0]" LOC = P134;
+NET "Data_I_AD9244[1]" LOC = P133;
+NET "Data_I_AD9244[2]" LOC = P132;
+NET "Data_I_AD9244[3]" LOC = P131;
+NET "Data_I_AD9244[4]" LOC = P127;
+NET "Data_I_AD9244[5]" LOC = P126;
+NET "Data_I_AD9244[6]" LOC = P124;
+NET "Data_I_AD9244[7]" LOC = P123;
+NET "Data_I_AD9244[8]" LOC = P121;
+NET "Data_I_AD9244[9]" LOC = P120;
+NET "Data_I_AD9244[10]" LOC = P119;
+NET "Data_I_AD9244[11]" LOC = P118;
+NET "Data_I_AD9244[12]" LOC = P117;
+NET "Data_I_AD9244[13]" LOC = P116;
+NET "OTR_AD9244" LOC = P115;
+
+## ADC2
+NET "clk_W_AD9244_1" LOC = P138;
+NET "Data_I_AD9244_1[0]" LOC = P11;
+NET "Data_I_AD9244_1[1]" LOC = P10;
+NET "Data_I_AD9244_1[2]" LOC = P9;
+NET "Data_I_AD9244_1[3]" LOC = P8;
+NET "Data_I_AD9244_1[4]" LOC = P7;
+NET "Data_I_AD9244_1[5]" LOC = P6;
+NET "Data_I_AD9244_1[6]" LOC = P5;
+NET "Data_I_AD9244_1[7]" LOC = P2;
+NET "Data_I_AD9244_1[8]" LOC = P1;
+NET "Data_I_AD9244_1[9]" LOC = P144;
+NET "Data_I_AD9244_1[10]" LOC = P143;
+NET "Data_I_AD9244_1[11]" LOC = P142;
+NET "Data_I_AD9244_1[12]" LOC = P141;
+NET "Data_I_AD9244_1[13]" LOC = P140;
+NET "OTR_AD9244_1" LOC = P139;
+

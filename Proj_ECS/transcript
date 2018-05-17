@@ -1,0 +1,69 @@
+# Reading D:/Program Files (x86)/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tb_uart.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tx_bridge
+# 
+# Top level modules:
+# 	tx_bridge
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module speed_setting
+# 
+# Top level modules:
+# 	speed_setting
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module rx_bridge
+# 
+# Top level modules:
+# 	rx_bridge
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module my_uart_tx
+# 
+# Top level modules:
+# 	my_uart_tx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module my_uart_rx
+# 
+# Top level modules:
+# 	my_uart_rx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_uart glbl 
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.speed_setting
+# Loading work.my_uart_rx
+# Loading work.rx_bridge
+# Loading work.tx_bridge
+# Loading work.my_uart_tx
+# Loading work.glbl
+# ** Error: (vsim-3043) tb_project/tb_uart.v(81): Unresolved reference to 'uart_rx0'.
+# 
+#         Region: /tb_uart
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./tb_uart.fdo PAUSED at line 34

@@ -1,0 +1,8 @@
+START:Strategy:4:MapRegDup
+REMOTE_PID:10052
+RUNNING:10052:3620:MapRegDup:map:Proj_ECS.ngd: -ol high -xe n -register_duplication on -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun4:bslProj_ECS.pcf
+DONE:map:211
+START:Strategy:7:MapExtraEffort2
+REMOTE_PID:7388
+RUNNING:7388:9232:MapExtraEffort2:map:Proj_ECS.ngd: -ol high -xe n -t 3 -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun7:bslProj_ECS.pcf
+DONE:map:211

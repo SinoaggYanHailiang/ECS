@@ -1,0 +1,673 @@
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+netgen -intstyle ise -s 2  -pcf Proj_ECS.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim Proj_ECS.ncd Proj_ECS_timesim.v 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+netgen -intstyle ise -s 2  -pcf Proj_ECS.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim Proj_ECS.ncd Proj_ECS_timesim.v 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256_dac8551/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v2_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS_cs.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc auto -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 
+netgen -intstyle ise -s 2  -pcf Proj_ECS.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim Proj_ECS.ncd Proj_ECS_timesim.v 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/Proj_ECS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/Proj_ECS.ucf -p xc6slx9-tqg144-2 Proj_ECS.ngc Proj_ECS.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Proj_ECS_map.ncd Proj_ECS.ngd Proj_ECS.pcf 
+par -w -intstyle ise -ol high -mt off Proj_ECS_map.ncd Proj_ECS.ncd Proj_ECS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Proj_ECS.twx Proj_ECS.ncd -o Proj_ECS.twr Proj_ECS.pcf 
+bitgen -intstyle ise -f Proj_ECS.ut Proj_ECS.ncd 

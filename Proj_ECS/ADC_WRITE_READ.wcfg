@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/2_FPGA_program/Proj_ECS_sinoagg_v1_fft256/Proj_ECS/tb_ecs_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_ecs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/rxen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxen</obj_property>
+      <obj_property name="ObjectShortName">rxen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/rxdb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rxdb[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/RX_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RX_rdy</obj_property>
+      <obj_property name="ObjectShortName">RX_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/Data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/Data2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/Data3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data3[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/Data4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data4[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/Data5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data5[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/uart_1/uut_rx_bridge/cstate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cstate[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cstate[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataRX_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataRX_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataRX_1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataRX_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataRX_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataRX_2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataRX_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataRX_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataRX_3[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataRX_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataRX_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataRX_4[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataRX_5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataRX_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataRX_5[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataTX_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataTX_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataTX_1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataTX_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataTX_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataTX_2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataTX_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataTX_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataTX_3[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/DataTX_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataTX_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataTX_4[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/Ctr_UART_1/Err_Check" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Err_Check</obj_property>
+      <obj_property name="ObjectShortName">Err_Check</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/AD9244_2/clk_R" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_R</obj_property>
+      <obj_property name="ObjectShortName">clk_R</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/AD9244_2/clk_R" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_R</obj_property>
+      <obj_property name="ObjectShortName">clk_R</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/AD9244_2/ReadEn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadEn</obj_property>
+      <obj_property name="ObjectShortName">ReadEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ecs/uut/AD9244_2/Addr_W" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Addr_W[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr_W[7:0]</obj_property>
+   </wvobject>
+</wave_config>

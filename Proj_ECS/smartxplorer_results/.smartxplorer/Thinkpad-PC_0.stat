@@ -1,0 +1,8 @@
+START:Strategy:1:MapRunTime
+REMOTE_PID:8112
+RUNNING:8112:5324:MapRunTime:map:Proj_ECS.ngd: -ol high -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun1:bslProj_ECS.pcf
+DONE:map:211
+START:Strategy:5:MapExtraEffortIOReg
+REMOTE_PID:9896
+RUNNING:9896:8884:MapExtraEffortIOReg:map:Proj_ECS.ngd: -ol high -xe n -pr b -t 7 -w  -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd  D:cl:bsl2_FPGA_program:bslProj_ECS_sinoagg_v22_fft256_dac8551_fir:bslProj_ECS:bslsmartxplorer_results:bslrun5:bslProj_ECS.pcf
+DONE:map:211

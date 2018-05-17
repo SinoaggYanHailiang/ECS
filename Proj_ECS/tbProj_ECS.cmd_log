@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/tbProj_ECS.xst" -ofn "D:/2_FPGA_program/Proj_ECS_sinoagg/Proj_ECS/tbProj_ECS.syr" 

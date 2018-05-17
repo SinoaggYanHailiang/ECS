@@ -1,0 +1,143 @@
+ISim log file
+Running: D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\tb_ecs_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_ecs_isim_par.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/proj_ecs_timesim.sdf, for root module /tb_ecs/uut/.
+Stopped at time : 0 fs : File "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_project/tb_ecs.v" Line 101
+# run all
+Finished circuit initialization process.
+WARNING: at 611444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:611335 ps, CLK:611444 ps,143 ps,50 ps)
+
+
+WARNING: at 611455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:611443 ps, CLK:611455 ps,143 ps,50 ps)
+
+
+WARNING: at 611455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:611326 ps, CLK:611455 ps,143 ps,50 ps)
+
+
+WARNING: at 811444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:811335 ps, CLK:811444 ps,143 ps,50 ps)
+
+
+WARNING: at 811455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:811443 ps, CLK:811455 ps,143 ps,50 ps)
+
+
+# run all
+WARNING: at 1011455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:1011326 ps, CLK:1011455 ps,143 ps,50 ps)
+
+
+WARNING: at 1411444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_7 /  $setuphold<setup>( I:1411366 ps, CLK:1411444 ps,143 ps,50 ps)
+
+
+WARNING: at 1411444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:1411335 ps, CLK:1411444 ps,143 ps,50 ps)
+
+
+WARNING: at 1411446 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_8 /  $setuphold<setup>( I:1411381 ps, CLK:1411446 ps,143 ps,50 ps)
+
+
+WARNING: at 1411455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:1411443 ps, CLK:1411455 ps,143 ps,50 ps)
+
+
+WARNING: at 1411455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:1411326 ps, CLK:1411455 ps,143 ps,50 ps)
+
+
+WARNING: at 1411474 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_7 /  $setuphold<hold>( CLK:1411455 ps, I:1411474 ps,143 ps,50 ps)
+
+
+WARNING: at 1411489 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_8 /  $setuphold<hold>( CLK:1411457 ps, I:1411489 ps,143 ps,50 ps)
+
+
+WARNING: at 1611444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_7 /  $setuphold<setup>( I:1611366 ps, CLK:1611444 ps,143 ps,50 ps)
+
+
+WARNING: at 1611444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:1611335 ps, CLK:1611444 ps,143 ps,50 ps)
+
+
+WARNING: at 1611455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:1611443 ps, CLK:1611455 ps,143 ps,50 ps)
+
+
+WARNING: at 1611474 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_7 /  $setuphold<hold>( CLK:1611455 ps, I:1611474 ps,143 ps,50 ps)
+
+
+WARNING: at 1811455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:1811326 ps, CLK:1811455 ps,143 ps,50 ps)
+
+
+WARNING: at 2211444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:2211335 ps, CLK:2211444 ps,143 ps,50 ps)
+
+
+WARNING: at 2211455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:2211443 ps, CLK:2211455 ps,143 ps,50 ps)
+
+
+WARNING: at 2211455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:2211326 ps, CLK:2211455 ps,143 ps,50 ps)
+
+
+WARNING: at 2411444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:2411335 ps, CLK:2411444 ps,143 ps,50 ps)
+
+
+WARNING: at 2411455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:2411443 ps, CLK:2411455 ps,143 ps,50 ps)
+
+
+WARNING: at 2611455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:2611326 ps, CLK:2611455 ps,143 ps,50 ps)
+
+
+WARNING: at 3011444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_7 /  $setuphold<setup>( I:3011366 ps, CLK:3011444 ps,143 ps,50 ps)
+
+
+WARNING: at 3011444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3011335 ps, CLK:3011444 ps,143 ps,50 ps)
+
+
+WARNING: at 3011455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3011443 ps, CLK:3011455 ps,143 ps,50 ps)
+
+
+WARNING: at 3011455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:3011326 ps, CLK:3011455 ps,143 ps,50 ps)
+
+
+WARNING: at 3011474 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_7 /  $setuphold<hold>( CLK:3011455 ps, I:3011474 ps,143 ps,50 ps)
+
+
+WARNING: at 3211444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_7 /  $setuphold<setup>( I:3211366 ps, CLK:3211444 ps,143 ps,50 ps)
+
+
+WARNING: at 3211444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3211335 ps, CLK:3211444 ps,143 ps,50 ps)
+
+
+WARNING: at 3211446 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_8 /  $setuphold<setup>( I:3211381 ps, CLK:3211446 ps,143 ps,50 ps)
+
+
+WARNING: at 3211455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3211443 ps, CLK:3211455 ps,143 ps,50 ps)
+
+
+WARNING: at 3211474 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_7 /  $setuphold<hold>( CLK:3211455 ps, I:3211474 ps,143 ps,50 ps)
+
+
+WARNING: at 3211489 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_8 /  $setuphold<hold>( CLK:3211457 ps, I:3211489 ps,143 ps,50 ps)
+
+
+Stopped at time : 3311 ns : File "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_project/tb_ecs.v" Line 1375
+# run all
+WARNING: at 3411455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:3411326 ps, CLK:3411455 ps,143 ps,50 ps)
+
+
+WARNING: at 3811444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3811335 ps, CLK:3811444 ps,143 ps,50 ps)
+
+
+WARNING: at 3811455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:3811443 ps, CLK:3811455 ps,143 ps,50 ps)
+
+
+WARNING: at 3811455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:3811326 ps, CLK:3811455 ps,143 ps,50 ps)
+
+
+WARNING: at 4011444 ps: Timing violation in /tb_ecs/uut/\AD9244_1/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:4011335 ps, CLK:4011444 ps,143 ps,50 ps)
+
+
+WARNING: at 4011455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_6 /  $setuphold<setup>( I:4011443 ps, CLK:4011455 ps,143 ps,50 ps)
+
+
+WARNING: at 4211455 ps: Timing violation in /tb_ecs/uut/\AD9244_2/low_pass_filter/mem_0_5 /  $setuphold<setup>( I:4211326 ps, CLK:4211455 ps,143 ps,50 ps)
+
+
+Stopped at time : 4586500 ps : File "D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/tb_project/tb_ecs.v" Line 1375

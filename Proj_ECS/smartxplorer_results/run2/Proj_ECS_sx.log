@@ -1,0 +1,67 @@
+
+Command Line : 
+-------------
+map D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results\run2\Proj_ECS.ngd -ol high -xe n -logic_opt on -t 2 -w -p xc6slx9-tqg144-2 -o Proj_ECS_map.ncd D:\2_FPGA_program\Proj_ECS_sinoagg_v22_fft256_dac8551_fir\Proj_ECS\smartxplorer_results\run2\Proj_ECS.pcf
+
+Release 14.7 - Map P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Using target part "6slx9tqg144-2".
+Mapping design into LUTs...
+Writing file Proj_ECS_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 48 secs 
+Total CPU  time at the beginning of Placer: 22 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:dec9b23a) REAL time: 51 secs 
+
+Phase 2.7  Design Feasibility Check
+ERROR:Place:1205 - This design contains a global buffer instance,
+   <Gen_clk_1/clk_W_AD9244_BUFG>, driving the net, <clk_W_AD9244_1_OBUF>, that
+   is driving the following (first 30) non-clock load pins off chip.
+   < PIN: clk_W_AD9244.O; >
+   < PIN: clk_W_AD9244_1.O; >
+   This design practice, in Spartan-6, can lead to an unroutable situation due
+   to limitations in the global routing. If the design does route there may be
+   excessive delay or skew on this net. It is recommended to use a Clock
+   Forwarding technique to create a reliable and repeatable low skew solution:
+   instantiate an ODDR2 component; tie the .D0 pin to Logic1; tie the .D1 pin to
+   Logic0; tie the clock net to be forwarded to .C0; tie the inverted clock to
+   .C1. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue. Although the net
+   may still not route, you will be able to analyze the failure in FPGA_Editor.
+   < PIN "Gen_clk_1/clk_W_AD9244_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <Gen_clk_1/clk_W_AD9244_BUFG>, driving the net, <clk_W_AD9244_1_OBUF>, that
+   is driving the following (first 30) non-clock load pins.
+   < PIN: clk_W_AD9244.O; >
+   < PIN: clk_W_AD9244_1.O; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "Gen_clk_1/clk_W_AD9244_BUFG.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 2.7  Design Feasibility Check (Checksum:dec9b23a) REAL time: 53 secs 
+
+Total REAL time to Placer completion: 53 secs 
+Total CPU  time to Placer completion: 24 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "Proj_ECS_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   0

@@ -1,0 +1,28 @@
+Command line:
+   tb_FFT_IPCORE_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55796
+
+Fri Apr 27 18:01:46 2018
+
+
+ Elaboration Time: 0.889205 sec
+
+ Current Memory Usage: 734.769 Meg
+
+ Total Signals          : 15841
+ Total Nets             : 10546
+ Total Signal Drivers   : 6370
+ Total Blocks           : 2561
+ Total Primitive Blocks : 2158
+ Total Processes        : 12052
+ Total Traceable Variables  : 6300
+ Total Scalar Nets and Variables : 78484
+
+ Total Simulation Time: 20.0773 sec
+
+ Current Memory Usage: 734.769 Meg
+
+Fri Apr 27 18:49:06 2018
+

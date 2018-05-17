@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Proj_ECS -o D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS/fir_mult.tfi -lib work D:/2_FPGA_program/Proj_ECS_sinoagg_v22_fft256_dac8551_fir/Proj_ECS//fir_multiplier_realization.v -module fir_mult -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
